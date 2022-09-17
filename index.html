@@ -114,33 +114,39 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                             </a>
                         </li>
                         
-                        <li>
-                            <a href="#导航聚合" class="smooth">
-                                <i class="fa fa-fw">🧭</i>
-                                <span class="title">导航聚合</span>
+                        <li class="has-sub">
+                            <a>
+                                 <i class="fa fa-fw">🧭</i>
+                                <span class="title">导航搜索</span>
                             </a>
-                        </li> 
+                            <ul>
+                                <li>
+                                    <a href="#导航聚合" class="smooth">导航聚合</a>
+                                </li>
+                                
+                                 <li>
+                                    <a href="#搜索聚合" class="smooth">搜索聚合</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
                         
-                         <li>
-                            <a href="#搜索聚合" class="smooth">
-                                <i class="fa fa-fw">🔍</i>
-                                <span class="title">搜索聚合</span>
+                        <li class="has-sub">
+                            <a>
+                                 <i class="fa fa-fw">🎬</i>
+                                <span class="title">影视阅读</span>
                             </a>
-                        </li> 
-                        
-                         <li>
-                            <a href="#影视聚合" class="smooth">
-                                <i class="fa fa-fw">🎬</i>
-                                <span class="title">影视聚合</span>
-                            </a>
-                        </li> 
-                        
-                         <li>
-                            <a href="#阅读聚合" class="smooth">
-                                <i class="fa fa-fw">📚</i>
-                                <span class="title">阅读聚合</span>
-                            </a>
-                        </li> 
+                            <ul>
+                                <li>
+                                    <a href="#影视聚合" class="smooth">影视聚合</a>
+                                </li>
+                                
+                                 <li>
+                                    <a href="#阅读聚合" class="smooth">阅读聚合</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
                         
                         <li class="has-sub">
                             <a>
@@ -266,7 +272,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                             </ul>
                         </li>
                         
-                          
                         <li class="has-sub">
                             <a>
                                 <i class="fa fa-fw">📟</i>
@@ -368,14 +373,36 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 
                             </ul>
                         </li>
-                         
-                        <li>
-                            <a href="#律政医务" class="smooth">
-                                <i class="fa fa-fw">⚖️</i>
-                                <span class="title">律政医务</span>
+                        
+                        <li class="has-sub">
+                            <a>
+                                 <i class="fa fa-fw">⚖️</i>
+                                <span class="title">公共服务</span>
                             </a>
-                        </li> 
-                         
+                            <ul>
+                                <li>
+                                    <a href="#法律咨询" class="smooth">法律咨询</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#政务平台" class="smooth">政务平台</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#取消电话标注" class="smooth">取消电话标注</a>
+                                </li>
+                                
+                                 <li>
+                                    <a href="#寻医问药" class="smooth">寻医问药</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#学习提升" class="smooth">学习提升</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        
                          
                     <li class="submit-tag">
                     </li>
@@ -453,8 +480,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		<div><i class="fa" style="color:red;line-height:25px">🔊</i></div>
         <div class="bulletin mx-1 mx-md-2">
             <ul class="bulletin-ul" style="margin-top: 0px;">
-				<li class="scrolltext-title overflowClip_1"><a href="https://aunger01.gitee.io/so" rel="bulletin">安杰搜索上线啦，无广告,搜索更便捷</a> (09/09)</li>
-				<li class="scrolltext-title overflowClip_1"><a href="#" rel="bulletin">搜索时点击【常用】切换更多搜索渠道</a> (09/15)</li>
+				<li class="scrolltext-title overflowClip_1"><a href="search.html" rel="bulletin">安杰搜索上线啦，无广告，搜索更便捷</a> (09/09)</li>
+				<li class="scrolltext-title overflowClip_1"><a href="#" rel="bulletin">搜索点击【常用】切换更多搜索渠道</a> (09/15)</li>
 			</ul>
 		</div>
         <a title="关闭" href="javascript:;" rel="external nofollow" onclick="$(&#39;#bulletin_box&#39;).slideUp(&#39;slow&#39;);" style="margin-left:auto"><i class="fa" style="line-height:25px">✘</i></a>
@@ -509,7 +536,7 @@ function AutoScroll(obj,hight){
             <span class="type-text">常用&nbsp;&nbsp;< </span>
             <ul class="search-type">
                 <li>
-                    <input checked="" hidden="" type="radio" name="type" id="type-fsou" value="https://fsoufsou.com/search?q=" data-placeholder="欢迎使用搜索，多款尊重隐私、无广告骚扰高质量搜索引擎">
+                    <input checked="" hidden="" type="radio" name="type" id="type-fsou" value="https://fsoufsou.com/search?q=" data-placeholder="让搜索的公告少一点，再少一点">
                     <label for="type-fsou">
                         <span style="color:#3B83FA">F搜</span>
                     </label>
@@ -1295,7 +1322,7 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                             <div class="xe-comment-entry">
                                 <!--图片-->
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="http://live.yj1211.work/favicon.ico" data-src="http://live.yj1211.work/favicon.ico" onerror="null" width="40">
+                                    <img class="img-circle lazy" src="https://redirect.invidious.io/favicon.ico" data-src="https://redirect.invidious.io/favicon.ico" onerror="null" width="40">
                                 </div>
                                 <!--简介-->
                                 <div class="xe-comment">
@@ -1412,6 +1439,29 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                         </a>
                     </div>
                     
+                     <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.52pojie.cn/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="吾爱破解,破解论坛,破解软件,软件论坛,病毒分析,脱壳破解,安卓破解,加密解密,软件安全">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.52pojie.cn/favicon.ico" data-src="https://www.52pojie.cn/favicon.ico" onerror="javascript:this.src=&#39;https://file.ipadown.com/tophub/assets/images/favicon/apple-icon-60x60.png&#39;" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>吾爱破解网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">破解论坛,破解软件,软件论坛,病毒分析,脱壳破解,安卓破解,加密解密,软件安全</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                     <!--网址模版2-->
                     <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
                         <!--链接网址-->
@@ -1490,7 +1540,7 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                             <div class="xe-comment-entry">
                                 <!--图片-->
                                 <div class="xe-user-img">
-                                    <img class="./logo/app-ico.png" data-src="./logo/app-ico.png" onerror="null" width="40">
+                                    <img class="https://www.feng.com/favicon.ico" data-src="https://www.feng.com/favicon.ico" onerror="null" width="40">
                                 </div>
                                 <!--简介-->
                                 <div class="xe-comment">
@@ -1829,6 +1879,29 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
         
         <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="小游戏合辑"></i>小游戏合辑</h4>
                 <div class="row">
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://aunger01.gitee.io/yang" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="羊了个羊-小游戏在线版">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://aunger01.gitee.io/yang/favicon.8de18.ico" data-src="https://aunger01.gitee.io/yang/favicon.8de18.ico" onerror="javascript:this.src=&#39;https://aunger01.gitee.io/iweb/game-new/tupian/lifeRestart1.jpg&#39;" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>羊了个羊</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">羊了个羊-小游戏在线版</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     
                     <!--网址模版2-->
                     <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
@@ -2340,7 +2413,7 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                             <div class="xe-comment-entry">
                                 <!--图片(无加载图片，属性onerror="null")-->
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png" data-src="https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png" onerror="null" width="40">
+                                    <img class="img-circle lazy" src="https://www.tampermonkey.net/favicon.ico" data-src="https://www.tampermonkey.net/favicon.ico" onerror="null" width="40">
                                 </div>
                                 <!--简介-->
                                 <div class="xe-comment">
@@ -2650,29 +2723,6 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                                     </div>
                                     <!--内容描述-->
                                     <p class="overflowClip_1">为开发运维提供全面的在线工具箱,已开发工具400款,包含开发工具,运维工具,常用工具,SEO站长工具等,是好用,方便的在线工具网站.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!--网址模版2-->
-                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
-                        <!--链接网址-->
-                        <a href="https://www.toolnb.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="兔二工具是一个集合了众多在线工具的神奇工具箱,集齐了短视频解析、音乐下载解析、风水测算、编程开发、王者空白名等超多小工具">
-                            <!--图文区域-->
-                            <div class="xe-comment-entry">
-                                <!--图片-->
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://amp360.net/assets/icon/favicon.png" data-src="https://amp360.net/assets/icon/favicon.png" onerror="null" width="40">
-                                </div>
-                                <!--简介-->
-                                <div class="xe-comment">
-                                    <!--名称-->
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>兔二工具</strong>
-                                    </div>
-                                    <!--内容描述-->
-                                    <p class="overflowClip_1">一个集合了众多在线工具的神奇工具箱,集齐了短视频解析、音乐下载解析、风水测算、编程开发、王者空白名等超多小工具</p>
                                 </div>
                             </div>
                         </a>
@@ -4212,7 +4262,7 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                 </div>
         <br>
         
-        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="律政医务"></i>法律政务医务</h4>
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="法律咨询"></i>法律咨询</h4>
                 <div class="row">
                     <!--法律-->
                     <!--网址模版2-->
@@ -4353,7 +4403,11 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                         </a>
                     </div>
                     
-                    
+                </div>
+        <br>
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="政务平台"></i>政务平台</h4>
+                <div class="row">
                     <!--政务-->
                     <!--网址模版2-->
                     <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
@@ -4631,7 +4685,110 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                         </a>
                     </div>
                     
+                </div>
+        <br>
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="取消电话标注"></i>号码恶意标注清除网站</h4>
+                <div class="row">
                     
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.114best.com/shensu.aspx" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="114取消电话号码标记：号码被显示为骚扰、广告推销、疑似诈骗 等标记或企业名称">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.114best.com/favicon.ico" data-src="https://www.114best.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>114取消电话号码标记</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">取消标记：号码被显示为骚扰、广告推销、疑似诈骗 等标记或企业名称</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://yun.m.qq.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="手机管家号码公众平台提供企业登记、黄页号码登记、骚扰标记申诉、个人号码标记申诉等功能，只需简单基本，来去电显示企业信息，更多详情，尽在腾讯手机管家号码公众平台。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://3gimg.qq.com/tele_safe/txwz_static_cssjs/img/lab/icon_fraud.png" data-src="https://3gimg.qq.com/tele_safe/txwz_static_cssjs/img/lab/icon_fraud.png" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>腾讯管家号码申述</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">手机管家号码公众平台提供企业登记、黄页号码登记、骚扰标记申诉、个人号码标记申诉等功能，只需简单基本，来去电显示企业信息，更多详情，尽在腾讯手机管家号码公众平台。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="http://haomashensu.360.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="360号码申诉标记平台">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="data:image/png;base64,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" data-src="data:image/png;base64,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" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>360号码申诉标记平台</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">360号码申诉标记平台</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://haoma.baidu.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="号码,电话,百度号码标记,客服热线,人工客服,百度号码申诉,百度号码认证,百度企业认证">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://bdhm.cdn.bcebos.com/web/favicon.ico" data-src="https://bdhm.cdn.bcebos.com/web/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>百度号码认证平台</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">百度号码标记,客服热线,人工客服,百度号码申诉,百度号码认证,百度企业认证</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+        <br>
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="寻医问药"></i>寻医问药</h4>
+                <div class="row">
                     <!--医务-->
                     <!--网址模版2-->
                     <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
@@ -4674,6 +4831,268 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                                     </div>
                                     <!--内容描述-->
                                     <p class="overflowClip_1">百科名医网，拥有海量的精准医学内容，为大众提供了可靠、科学、实用的健康科普知识，让大众面对网络医疗健康信息不再迷茫。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://ask.nocode.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="就诊问问，理解你的健康医疗问题，查找全网专业医疗信息。支持疾病、药品、医院、医生等常用医疗场景的搜索查询，致力于提供简洁可信的医疗信息内容。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://ask.nocode.com/favicon.ico" data-src="https://ask.nocode.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>就诊问问</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">查找全网专业医疗信息。支持疾病、药品、医院、医生等常用医疗场景的搜索查询，致力于提供简洁可信的医疗信息内容。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+        <br>
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="学习提升"></i>学习提升</h4>
+                <div class="row">
+                    
+                    <!--学习-->
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://le.ouchn.cn/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国开终身教育平台">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://le.ouchn.cn/assets/logo.8894ec3b.ico" data-src="https://le.ouchn.cn/assets/logo.8894ec3b.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>终身教育平台</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">国开终身教育平台</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.zxx.edu.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国家中小学智慧教育平台">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.zxx.edu.cn/favicon.ico" data-src="https://www.zxx.edu.cn/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>智慧教育</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">国家中小学智慧教育平台</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.diyijc.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="第一教程网(diyijc.com):专注于提供最全最实用的教育教学视频教程,免费在线观看学习，主要包含电脑、外语、中小学、大学、考研、资格、技能、医学体育、农业、家居、军史历史等视频教程！">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.diyijc.com/favicon.ico" data-src="https://www.diyijc.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>第一教程网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">提供最全最实用的教育教学视频教程,免费在线观看学习，主要包含电脑、外语、中小学、大学、考研、资格、技能、医学体育、农业、家居、军史历史等视频教程！</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--题库-->
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="http://www.cainiaosouti.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="医学在线搜题库软件,在线搜题软件,免费搜题网站,搜题在线使用,在线搜题公众号,免费医学题库软件">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="http://www.cainiaosouti.com/Themes/orange/img/faviconcainiao.ico" data-src="http://www.cainiaosouti.com/Themes/orange/img/faviconcainiao.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>菜鸟搜题网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">医学在线搜题库软件,在线搜题软件,免费搜题网站,搜题在线使用,在线搜题公众号,免费医学题库软件</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.tikuol.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="题库网提供各种考试的题目问题与答案，组建强大的题库习题系统。包括小学题库、初中题库、大学题库、驾照题库、职业资格考试题库，涵盖语文、数学、英语、物理、化学、生物、历史、地理、政治等课程。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.tikuol.com/favicon.ico" data-src="https://www.tikuol.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>题库网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">提供各种考试的题目问题与答案，组建强大的题库习题系统。包括小学题库、初中题库、大学题库、驾照题库、职业资格考试题库，涵盖语文、数学、英语、物理、化学、生物、历史、地理、政治等课程。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.jiandati.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="简答题汇集了各职业资格考试真题与大学网课（超星尔雅、学习通、云青书学堂、知到、智慧树、中国大学慕课等）题目，拥有真实可靠的答案，并为您提供答案解析与错题记录，是各类考生提升成绩的不二选择。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.jiandati.com/favicon.ico" data-src="https://www.jiandati.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>简答题</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">汇集了各职业资格考试真题与大学网课（超星尔雅、学习通、云青书学堂、知到、智慧树、中国大学慕课等）题目，拥有真实可靠的答案，并为您提供答案解析与错题记录，是各类考生提升成绩的不二选择。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.woyaosouti.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="我要搜题网是一款服务于职业考证的考试搜题软件,拥有几千万不同考试医学考试题库和执业医师试题库,通过章节练习,模拟试题,历年真题等练习来让不同的用户学习和巩固知识,使他们能够通过考试和学习,获得相应的成就。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.woyaosouti.com/favicon.ico" data-src="https://www.woyaosouti.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>我要搜题网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">一款服务于职业考证的考试搜题软件,拥有几千万不同考试医学考试题库和执业医师试题库,通过章节练习,模拟试题,历年真题等练习来让不同的用户学习和巩固知识,使他们能够通过考试和学习,获得相应的成就。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.examcoo.com/index/ku" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="考试酷的公共题库中心页面,提供海量试题库资源.考试酷网站是由广州创讯软件有限公司开发和运营的一个永久免费的在线考试系统,网络考试系统,提供在线考试,电子作业,自测练习和模拟考试,智能组卷,试卷分享,试题库等考试系统和考试相关服务.">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.examcoo.com/favicon.ico" data-src="https://www.examcoo.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>考试酷</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">考试酷的公共题库中心页面,提供海量试题库资源.考试酷网站是由广州创讯软件有限公司开发和运营的一个永久免费的在线考试系统,网络考试系统,提供在线考试,电子作业,自测练习和模拟考试,智能组卷,试卷分享,试题库等考试系统和考试相关服务.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.asklib.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="问答库收录了数百万的公务员考试，建筑工程，IT认证，资格考试，会计从业，医药考试，外语考试，外贸考试，学历考试等各类题库以及一些常见的普通练习的题目题库供大家查询">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.asklib.com/favicon.svg" data-src="https://www.asklib.com/favicon.svg" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>问答库</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">收录了数百万的公务员考试，建筑工程，IT认证，资格考试，会计从业，医药考试，外语考试，外贸考试，学历考试等各类题库以及一些常见的普通练习的题目题库供大家查询</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.rwtext.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="瑞文文摘发布精心整理的各类考试习题答案、教育文章、教学论文、学生作文等文本，为您的考试、学习、工作提供尽可能多的帮助">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.rwtext.com/favicon.ico" data-src="https://www.rwtext.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>瑞文文摘</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">各类考试习题答案、教育文章、教学论文、学生作文等文本，为您的考试、学习、工作提供尽可能多的帮助</p>
                                 </div>
                             </div>
                         </a>
