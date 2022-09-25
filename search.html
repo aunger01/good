@@ -13,7 +13,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://so.aunger.cf">
+<meta property="og:url" content="https://s.aunger.cf">
 <meta property="og:title" content="">
 <meta property="og:description" content="">
 <meta property="og:image" content="./logo/screenshot.jpg">
@@ -82,9 +82,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 <!-- 左侧模块 -->
-<div class="sidebar-menu toggle-others collapsed">
+<div class="sidebar-menu toggle-others collapsed fixed2">
     <!--class里的属性【collapsed】改为【fixed】时，左侧logo转为展开状态-->
-    
+    <style>/* 小logo局中显示 */
+        .sidebar-menu.fixed2{height:100%}
+        .sidebar-menu.fixed2 .sidebar-menu-inner{position:fixed;left:0;top:0;bottom:0;width:inherit;overflow:hidden}
+    </style>
             <div class="sidebar-menu-inner ps-container" style="max-height: 823px;">
                 
                 <!-- logo区域 -->
