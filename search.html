@@ -213,21 +213,16 @@ function AutoScroll(obj,hight){
 
 
 <!-- 搜索区 -->
-<div id="search" class="s-search"  style="margin-top:15%">
+<div id="search" class="s-search">
     
-    
-	<!-- LOGO-白色-->
-	<div align="center" ><img src="./logo/logo@2x-2.png" , style="max-width: 30%;width:200px;"></div><br>
-
-    
-    
-    <div id="search-list" class="hide-type-list"  style="margin-top:5%">
+    <div id="search-list" class="hide-type-list">
         <!-- 默认常用 -->
         <div class="s-type">
             <span></span>
             <div class="s-type-list animated fadeInUp">
                 <label for="type-fsou">常用</label>
                 <label for="type-search">搜索</label>
+                <label for="type-ffanyi">翻译</label>
                 <label for="type-zhihu">社区</label>
                 <label for="type-douyin">视频</label>
                 <label for="type-xiaoji1">百科</label>
@@ -277,6 +272,12 @@ function AutoScroll(obj,hight){
                         <span style="color:#f40">搜片</span>
                     </label>
                 </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type- deeplfanyi1" value="https://www.deepl.com/zh/translator#zh/en/" data-placeholder="DeepL翻译：全世界最准确的翻译">
+                    <label for="type- deeplfanyi1">
+                        <span style="color:#007daa">DeepL翻译</span>
+                    </label>
+                </li>
             </ul>
         </div>
         
@@ -314,6 +315,19 @@ function AutoScroll(obj,hight){
                         <span style="color:#FFC300">Yandex</span>
                     </label>
                 </li>
+            </ul>
+        </div>
+        
+        <!--翻译-->
+        <div class="search-group group-c">
+            <span class="type-text">翻译&nbsp;&nbsp;< </span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-ffanyi" value="https://fsoufsou.com/translate?t=" data-placeholder="FSO翻译"><label for="type-ffanyi"><span style="color:#3B83FA">FSO翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type- deeplfanyi" value="https://www.deepl.com/zh/translator#zh/en/" data-placeholder="DeepL翻译：全世界最准确的翻译"><label for="type- deeplfanyi"><span style="color:#007daa">DeepL翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-baidufanyi" value="https://fanyi.baidu.com/#zh/en/" data-placeholder="百度翻译"><label for="type-baidufanyi"><span style="color:#2100E0">百度翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-yandexfanyi" value="https://translate.yandex.com/?lang=zh-en&text=" data-placeholder="Yandex翻译"><label for="type-yandexfanyi"><span style="color:#FFC300">Yandex翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-sogoufanyi" value="https://fanyi.sogou.com/text?keyword=" data-placeholder="搜狗翻译"><label for="type-sogoufanyi"><span style="color:#ff5943">搜狗翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-360fanyi" value="https://fanyi.so.com/#" data-placeholder="360翻译"><label for="type-360fanyi"><span style="color:#19b955">360翻译</span></label></li>
             </ul>
         </div>
         
