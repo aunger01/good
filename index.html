@@ -31,10 +31,10 @@
 <meta property="og:url" content="https://aunger.cf">
 <meta property="og:title" content="">
 <meta property="og:description" content="">
-<meta property="og:image" content="./logo/apple-ico-3.png">
+<meta property="og:image" content="./logo/apple-ico-4.png">  <!--生效桌面图标-->
 <meta property="og:site_name" content="安杰聚合导航">
-<link rel="shortcut icon" href="./logo/favicon.ico">
-<link rel="apple-touch-icon" href="./logo/apple-ico-3.png">
+<link rel="shortcut icon" href="/favicon-2.ico">   <!--浏览器顶部图标-->
+<link rel="apple-touch-icon" href="./logo/apple-ico-4.png">
 <link rel="favicon" href="favicon.ico">
 <meta name="robots" content="noindex, nofollow">
 <style id="global-styles-inline-css" type="text/css">
@@ -609,18 +609,18 @@ function AutoScroll(obj,hight){
 
 <!-- 搜索区 -->
 <div id="search" class="s-search">
-    
-    <div id="search-list" class="hide-type-list">
+
+    <div id="search-list" class="hide-type-list" style="margin-top:5%">
         <!-- 默认常用 -->
         <div class="s-type">
             <span></span>
             <div class="s-type-list animated fadeInUp">
-                <label for="type-fsou">常用</label>
+                <label for="type-searx">常用</label>
                 <label for="type-search">搜索</label>
                 <label for="type-ffanyi">翻译</label>
                 <label for="type-zhihu">社区</label>
                 <label for="type-douyin">视频</label>
-                <label for="type-xiaoji1">百科</label>
+                <label for="type-ask1">百科</label>
                 <label for="type-br">工具</label>
                 <label for="type-jiumo">书籍</label>
                 <label for="type-zhiyoubang">软件</label>
@@ -640,22 +640,17 @@ function AutoScroll(obj,hight){
                 <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
             &nbsp;</span>
             <ul class="search-type">
+                
                 <li>
-                    <input checked="" hidden="" type="radio" name="type" id="type-fsou" value="https://fsoufsou.com/search?q=" data-placeholder="让搜索的广告少一点，再少一点">
-                    <label for="type-fsou">
-                        <span style="color:#3B83FA">F搜</span>
-                    </label>
-                </li>
-                <li>
-                    <input hidden="" type="radio" name="type" id="type-searx" value="https://searx.org/search?q=" data-placeholder="Searx：开源搜索引擎">
+                    <input  checked="" hidden="" type="radio" name="type" id="type-searx" value="https://searx.org/search?q=" data-placeholder="让搜索的广告少一点，再少一点">
                     <label for="type-searx">
                         <span style="color:#313439">Searx</span>
                     </label>
                 </li>
                 <li>
-                    <input hidden="" type="radio" name="type" id="type-xiaoji" value="https://jikipedia.com/search?phrase=" data-placeholder="小鸡词典：拼音首字母缩写释义">
-                    <label for="type-xiaoji">
-                        <span style="color:#FFC300">小鸡词典</span>
+                    <input hidden="" type="radio" name="type" id="type-fsou" value="https://fsoufsou.com/search?q=" data-placeholder="F搜：无广告的良心搜索">
+                    <label for="type-fsou">
+                        <span style="color:#3B83FA">F搜</span>
                     </label>
                 </li>
                 <li>
@@ -686,16 +681,17 @@ function AutoScroll(obj,hight){
                 <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
             &nbsp;</span>
             <ul class="search-type">
+                
                 <li>
-                    <input hidden="" type="radio" name="type" id="type-search" value="https://fsoufsou.com/search?q=" data-placeholder="F搜：无广告的良心搜索">
+                    <input hidden="" type="radio" name="type" id="type-search" value="https://searx.org/search?q=" data-placeholder="Searx：开源搜索引擎">
                     <label for="type-search">
-                        <span style="color:#3B83FA">F搜</span>
+                        <span style="color:#313439">Searx</span>
                     </label>
                 </li>
                 <li>
-                    <input hidden="" type="radio" name="type" id="type-searx1" value="https://searx.org/search?q=" data-placeholder="Searx：开源搜索引擎">
-                    <label for="type-searx1">
-                        <span style="color:#313439">Searx</span>
+                    <input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsoufsou.com/search?q=" data-placeholder="F搜：无广告的良心搜索">
+                    <label for="type-fsou1">
+                        <span style="color:#3B83FA">F搜</span>
                     </label>
                 </li>
                 <li>
@@ -774,7 +770,7 @@ function AutoScroll(obj,hight){
                 <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
             &nbsp;</span>
             <ul class="search-type">
-                <li><input hidden="" type="radio" name="type" id="type-xiaoji1" value="https://jikipedia.com/search?phrase="  data-placeholder="小鸡词典：拼音首字母缩写释义"><label for="type-xiaoji1"><span style="color:#FFC300">小鸡词典</span></label></li>
+                
 				<li><input hidden="" type="radio" name="type" id="type-ask1" value="https://ask.nocode.com/search?q=" data-placeholder="就诊问问：简单描述你的问题（如：头疼）"><label for="type-ask1"><span style="color:#19b955">就诊问问</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-lishichelun" value="https://www.lishichelun.com/search?q=" data-placeholder="历史车轮：搜索历史朝代/人物知识"><label for="type-lishichelun"><span style="color:#c91623">历史车轮</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-wikihow" value="https://zh.wikihow.com/wikiHowTo?search=" data-placeholder="WikiHow：学点什么生活技能（如：做饭）"><label for="type-wikihow"><span  style="color:#19b955">WikiHow</span></label></li>
@@ -971,10 +967,7 @@ function AutoScroll(obj,hight){
         
         
 </div>
-    
-       
-    
-
+ 
     
 </div>
 
@@ -1169,75 +1162,6 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                                     </div>
                                     <!--内容描述-->
                                     <p class="overflowClip_1">恶搞并自动百度工具</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!--网址模版2-->
-                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
-                        <!--链接网址-->
-                        <a href="https://aunger.ga/google/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="恶搞并自动谷歌工具">
-                            <!--图文区域-->
-                            <div class="xe-comment-entry">
-                                <!--图片-->
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="./logo/app-ico.png" data-src="./logo/app-ico.png" onerror="null" width="40">
-                                </div>
-                                <!--简介-->
-                                <div class="xe-comment">
-                                    <!--名称-->
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>你不会谷歌吗</strong>
-                                    </div>
-                                    <!--内容描述-->
-                                    <p class="overflowClip_1">恶搞并自动谷歌工具</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!--网址模版2-->
-                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
-                        <!--链接网址-->
-                        <a href="https://aunger.ga/bing/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="恶搞并自动bing搜索工具">
-                            <!--图文区域-->
-                            <div class="xe-comment-entry">
-                                <!--图片-->
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="./logo/app-ico.png" data-src="./logo/app-ico.png" onerror="null" width="40">
-                                </div>
-                                <!--简介-->
-                                <div class="xe-comment">
-                                    <!--名称-->
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>你不会bing搜索吗</strong>
-                                    </div>
-                                    <!--内容描述-->
-                                    <p class="overflowClip_1">恶搞并自动bing搜索工具</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!--网址模版2-->
-                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
-                        <!--链接网址-->
-                        <a href="https://aunger.ga/fso/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="FSO跨域搜索">
-                            <!--图文区域-->
-                            <div class="xe-comment-entry">
-                                <!--图片-->
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="./logo/app-ico.png" data-src="./logo/app-ico.png" onerror="null" width="40">
-                                </div>
-                                <!--简介-->
-                                <div class="xe-comment">
-                                    <!--名称-->
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>FSO跨域搜索</strong>
-                                    </div>
-                                    <!--内容描述-->
-                                    <p class="overflowClip_1">FSO跨域搜索</p>
                                 </div>
                             </div>
                         </a>
@@ -2948,6 +2872,29 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                         </a>
                     </div>
                     
+                    
+                     <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://gengbaike.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="梗百科，一个有新梗热梗的梗网站。梗百科，解释网络语、弹幕、网络热词是什么梗，流行语是什么意思。梗百科，专注于网络梗、流行语梗，分享热门的网络用语、网络热词。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://gengbaike.cn/favicon.ico" data-src="https://gengbaike.cn/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>梗百科</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">一个有新梗热梗的梗网站。梗百科，解释网络语、弹幕、网络热词是什么梗，流行语是什么意思。梗百科，专注于网络梗、流行语梗，分享热门的网络用语、网络热词。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     
                      <!--网址模版2-->
                     <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
@@ -5806,6 +5753,30 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                         </a>
                     </div>
                     
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.microsoftedgeinsider.com/zh-cn/download" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="火萤动态壁纸官网-手机|电脑高清动态视频桌面壁纸屏保软件">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://www.microsoftedgeinsider.com/favicon.ico" data-src="https://www.microsoftedgeinsider.com/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Edge浏览器-内测版</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">火萤动态壁纸官网-手机|电脑高清动态视频桌面壁纸屏保软件</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
                     
                 </div>
         <br>
@@ -7112,6 +7083,98 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                                     </div>
                                     <!--内容描述-->
                                     <p class="overflowClip_1">在线生成微信对话</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://dialogue.moe" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="视频台词混剪，它通过爬取字幕组的中文字幕，收录了65000000+的对话，比如柯南里的那句「真相永远只有一个」，559228条结果秒出。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://dialogue.moe/static/favicon.ico" data-src="https://dialogue.moe/static/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Dialogue</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">视频台词混剪，它通过爬取字幕组的中文字幕，收录了65000000+的对话，比如柯南里的那句「真相永远只有一个」，559228条结果秒出。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://zhaotaici.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="视频台词搜索">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://zhaotaici.cn/img/favicon.ico" data-src="https://zhaotaici.cn/img/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>找台词</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">视频台词搜索</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://33.agilestudio.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="通过台词找影片素材">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://33.agilestudio.cn/favicon.ico" data-src="https://33.agilestudio.cn/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>33台词</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">通过台词找影片素材</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.systemrequirementslab.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="用不到一分钟，查看您的计算机是否可以运行任何流行的PC游戏。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://cf.systemrequirementslab.com/www/favicon.ico" data-src="https://cf.systemrequirementslab.com/www/favicon.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Can you run it</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">用不到一分钟，查看您的计算机是否可以运行任何流行的PC游戏。</p>
                                 </div>
                             </div>
                         </a>
@@ -14907,6 +14970,29 @@ eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<
                                     </div>
                                     <!--内容描述-->
                                     <p class="overflowClip_1">人工智能,AI绘画,ai画图,ai下载,ai绘画网站,AIGC,文生图,创作灵感,ai免费下载,人工智能绘画,ai制图,AI生成,AI创作,创意图像,一语成画,AI创作实验室,站酷AI创作,ai作画,ai人工智能绘图</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://rightbrain.art" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="AI根据图文生成画面，大模型+ lora 小模型组合搭配生成不同风格的图片，网站左侧有一个「风格模型」的仓库，里面就是不同风格的小模型，包括不限于韩国女生，日本女生等等，点击「星号」收藏就能调用。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="https://right-static.oss-cn-beijing.aliyuncs.com/logo.ico" data-src="https://right-static.oss-cn-beijing.aliyuncs.com/logo.ico" onerror="null" width="40">
+                                </div>
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Vega AI</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">AI根据图文生成画面，大模型+ lora 小模型组合搭配生成不同风格的图片，网站左侧有一个「风格模型」的仓库，里面就是不同风格的小模型，包括不限于韩国女生，日本女生等等，点击「星号」收藏就能调用。</p>
                                 </div>
                             </div>
                         </a>
