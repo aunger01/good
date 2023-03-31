@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">.amap-logo{display:block!important;pointer-events:none;}</style>
+<style type="text/css" class="AMap.style">
+    .vml{behavior:url(#default#VML);display:inline-block;position:absolute}.amap-custom{top:0;left:0;position:absolute}.amap-container img{max-width:none!important;max-height:none!important}.amap-container{touch-action:none;position:relative;overflow:hidden;background:#fcf9f2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AgMAAAC2uDcZAAAADFBMVEX////////////////1pQ5zAAAABHRSTlMAgP/AWuZC2AAAAVhJREFUeAFiYGAQYGDEQjAB2rcDC4BiGIqiU7abdKlO2QkeIClyPsDHweMKtOPHIJ1Op6/w7Y4fdqfT6VpndzqdrnV2p9PpWmd3Oj3qWndSoKp+2J1Op7vr7E6n07XO7nQ6XevsTqfTtc7udPo4/f787E6n0911dqfT6VpndzqdrnV2p9PpWmd3Ot27Ce8m6HS6u85dR6fTtU7r6HS61mkdnU7XOrvT6XTvJuxOp9PddXan0+laZ3c6na51dDpd67SOTqd7N+HdBJ1Od9e56+h0utZpHZ1O1zq70+l0rbM7nU73bsLudDrdXWd3Ol3rtI5Op2ud1tHpdK3TOjqd7t2EdxN0Ot1dZ3c6na51dqfT6VpndzqdrnV2p9Pp3k3Q6XR3nbuOTqdrndbR6XSt0zo6na51Wken072bsDudTnfX2Z1Op2ud3el0utbZnU7XOq2j0+t0uncTD1gO4zoT5doZAAAAAElFTkSuQmCC);-ms-touch-action:none}.amap-drags,.amap-layers{width:100%;height:100%;position:absolute;overflow:hidden}.amap-layers canvas{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.amap-layer img{pointer-events:none}.amap-e,.amap-maps{width:100%;height:100%}.amap-maps,.amap-e,.amap-layers,.amap-tile,.amap-tile-container{position:absolute;left:0;top:0;overflow:hidden}.amap-context{position:absolute;left:0;top:0}.amap-overlays,.amap-markers,.amap-marker{position:absolute;left:0;top:0}.amap-layers{z-index:0}.amap-overlays{z-index:110;cursor:default}.amap-markers{z-index:120}.amap-controls{z-index:150}.amap-copyright{position:absolute;display:block!important;left:77px;height:16px;bottom:0;padding-bottom:3px;font-size:11px;font-family:Arial,sans-serif;z-index:160}.amap-logo{position:absolute;bottom:1px;left:1px;z-index:160;height:20px}.amap-logo img{width:73px!important;height:20px!important;border:0;vertical-align:baseline!important}.amap-icon{position:relative;z-index:1}.amap-icon img{position:absolute;z-index:-1}.amap-marker-label{position:absolute;z-index:2;border:1px solid blue;background-color:white;white-space:nowrap;cursor:default;padding:3px;font-size:12px;line-height:14px}.amap-info{position:absolute;left:0;z-index:140;width:320px}.amap-menu{position:absolute;z-index:140;_width:100px}.amap-info-close{position:absolute;right:5px;_right:12px;+right:11px;top:5px;_top:2px;+top:2px;color:#c3c3c3;text-decoration:none;font:bold 16px/14px Tahoma,Verdana,sans-serif;width:14px;height:14px}.amap-info-outer,.amap-menu-outer{box-shadow:0 1px 2px rgba(0,0,0,0.1);background:none repeat scroll 0 0 white;border-radius:2px;padding:1px;text-align:left}.amap-menu-outer:hover{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-contentContainer:hover .amap-info-outer{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-content{position:relative;background:#fff;padding:10px 18px 10px 10px;line-height:1.4;overflow:auto}.amap-marker-content{position:relative}.amap-info{_width:320px}.amap-menu{_width:100px}.amap-info-sharp-old{overflow:hidden;position:absolute;background-image:url(http://webapi.amap.com/images/arrows.png)}.bottom-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:center 12px;top:100%;margin-top:-9px;left:50%;margin-left:-10px}.bottom-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -46px;top:100%;margin-top:-9px}.bottom-right .amap-info-sharp-old{height:12px;width:13px;top:-1px;background-position:-56px -46px;left:100%;margin-left:-13px;top:100%;margin-top:-9px}.middle-left .amap-info-sharp-old{height:20px;width:12px;background-position:left;top:50%;margin-top:-10px;margin-left:-11px}.center .amap-info-sharp-old{display:none}.middle-right .amap-info-sharp-old{height:20px;margin-right:0;width:12px;background-position:right;left:100%;margin-left:-9px;top:50%;margin-top:-10px}.top-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:top;top:0;margin-top:-3px;left:50%;margin-left:-10px}.top-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -3px;top:0;margin-top:-3px}.top-right .amap-info-sharp-old{height:12px;width:13px;background-position:-56px -3px;left:100%;margin-left:-13px;top:0;margin-top:-3px}.amap-info-sharp{position:absolute}.bottom-center .amap-info-sharp{bottom:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #fff}.bottom-center .amap-info-sharp:after{position:absolute;content:"";margin-left:-8px;margin-top:-7px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid rgba(0,0,0,0.3);filter:blur(2px);z-index:-1}.amap-info-contentContainer:hover.bottom-center .amap-info-sharp:after{border-top:8px solid rgba(0,0,0,0.5)}.bottom-left .amap-info-sharp{border-color:transparent #fff;border-width:0 0 10px 10px;border-style:solid}.bottom-left .amap-info-sharp:after{position:absolute;content:"";margin-left:-10px;border-color:transparent rgba(0,0,0,0.3);border-width:0 0 10px 10px;border-style:solid;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-left .amap-info-sharp:after{border-color:transparent rgba(0,0,0,0.5)}.bottom-left .amap-info-content{border-radius:2px 2px 2px 0}.bottom-right .amap-info-sharp{right:0;border-top:10px solid #fff;border-left:10px solid transparent}.bottom-right .amap-info-sharp:after{position:absolute;margin-top:-9px;margin-left:-10px;content:"";border-top:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-right .amap-info-sharp:after{border-top:10px solid rgba(0,0,0,0.5)}.bottom-right .amap-info-content{border-radius:2px 2px 0 2px}.top-center .amap-info-sharp{top:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #fff}.top-center .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid rgba(0,0,0,0.3);filter:blur(1px);z-index:-1}.top-left .amap-info-sharp{left:0;top:0;border-bottom:10px solid #fff;border-right:10px solid transparent}.top-left .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:0;border-bottom:10px solid rgba(0,0,0,0.3);border-right:10px solid transparent;filter:blur(1px);z-index:-1}.top-right .amap-info-sharp{right:0;top:0;border-bottom:10px solid #fff;border-left:10px solid transparent}.top-right .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-10px;border-bottom:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.middle-right .amap-info-sharp{right:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-left:8px solid #fff;border-bottom:8px solid transparent}.middle-right .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:-8px;border-top:8px solid transparent;border-left:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-right .amap-info-sharp:after{border-left:8px solid rgba(0,0,0,0.5)}.middle-left .amap-info-sharp{left:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-right:8px solid #fff;border-bottom:8px solid transparent}.middle-left .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:0;border-top:8px solid transparent;border-right:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-left .amap-info-sharp:after{border-right:8px solid rgba(0,0,0,0.5)}.amap-info-contentContainer.top-left,.amap-info-contentContainer.top-center,.amap-info-contentContainer.top-right{padding-top:8px}.amap-info-contentContainer.bottom-left,.amap-info-contentContainer.bottom-center,.amap-info-contentContainer.bottom-right{padding-bottom:8px}.amap-info-contentContainer.middle-right{padding-right:8px}.amap-info-contentContainer.middle-left{padding-left:8px}.amap-menu-outer{margin:0;padding:0;list-style-type:none}ul.amap-menu-outer li{cursor:pointer;height:35px;line-height:35px;word-break:break-all;padding:0 10px;font-size:12px;white-space:nowrap}ul.amap-menu-outer li a{text-decoration:none;font-size:13px;margin:0 5px;color:#000;padding:5px 5px}ul.amap-menu-outer li:hover{background-color:#f3f3ee}.amap-overlay-text-container{display:block;width:auto;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff;padding:2px 3px;border:1px solid #ccc;border-radius:3px}.amap-overlay-text-container.amap-overlay-text-empty{display:none}.amap-info-content-ie8{border:1px solid #9c9c9c}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>安杰聚合ChatGPT</title>
+<meta name="theme-color" content="#2C2E2F">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aunger.cf/gpt">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="../logo/apple-ico.png">
+<meta property="og:site_name" content="安杰聚合ChatGPT">
+<link rel="shortcut icon" href="../logo/favicon.png">
+<link rel="apple-touch-icon" href="../logo/apple-ico.png">
+<meta name="robots" content="noindex, nofollow">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+
+<link rel="stylesheet" id="bootstrap-css" href="../css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="nav-css" href="../css/nav.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/he-simple.css">
+
+<script src="../js/he-simple.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js" id="jquery-js"></script>
+
+<link rel="stylesheet" id="iconfont-css" href="../css/iconfont.css" type="text/css" media="all">
+
+
+<style>.navbar-content .menu-item.menu-item-837 a{background-color: #ff3b00!important;
+    color: #fff!important;
+    border-radius: 50px!important;
+    padding: 10px 20px!important;
+}
+.navbar-content .menu-item.menu-item-837 a:hover{background-color: #ff1baa!important;
+}
+</style>
+<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+<style type="text/css">.amap-container{cursor:url(https://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(https://webapi.amap.com/theme/v1.3/closedhand.cur),default;}</style>
+<script charset="utf-8" src="../js/modules" id="amap_plus_js"></script>
+
+<!--百度统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?09f20d4c73bf6551ccf0a64480677962";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+
+
+
+</head> 
+
+
+
+
+
+<body class="page-body white">
+
+
+
+
+<div class="page-container"><!-- 开始div -->
+      
+
+
+
+<!-- 左侧模块 -->
+<div class="sidebar-menu toggle-others fixed" style="">
+    
+            <div class="sidebar-menu-inner ps-container" style="max-height: 823px;">
+                
+                <!-- logo区域 -->
+                <header class="logo-env">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="https://aunger.cf" class="logo-expanded">
+                            <img src="../logo/logo@2x.png" height="40" alt="安杰聚合ChatGPT">
+                        </a>
+                        <a href="#" class="logo-collapsed">
+                            <img src="../logo/logo-collapsed@2x.png" height="40" alt="安杰聚合ChatGPT">
+                        </a>
+                    </div>
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="mobile-menu">
+                            <i class="fa">≡</i>
+                        </a>
+                    </div>
+                </header>
+                
+                <!-- 导航菜单 -->
+                <ul id="main-menu" class="main-menu">
+                        <li>
+                            <a href="#第三方GPT" class="smooth">
+                                <i class="fa fa-fw">📝</i>
+                                <span class="title">第三方GPT</span>
+                            </a>
+                        </li>
+                        
+                         <li>
+                            <a href="#官方GPT" class="smooth">
+                                <i class="fa fa-fw">🖇️</i>
+                                <span class="title">官方GPT</span>
+                            </a>
+                        </li>
+                        
+                         
+                    <li class="submit-tag">
+                    </li>
+                    
+                    
+                    <li class="submit-tag"></li>
+                    
+                    
+                </ul>
+                
+                
+                
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 2px;">
+                    <div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div>
+                </div>
+            </div>
+</div>
+
+
+
+
+<!-- 右侧模块 -->
+<div class="main-content" style="">
+
+
+
+<!-- 顶部：天气/导航 -->
+<nav class="navbar user-info-navbar" role="navigation">
+    
+    <div class="navbar-content">
+      <ul class="user-info-menu list-inline list-unstyled">
+        <li class="hidden-xs">
+            <a href="#" data-toggle="sidebar">
+                <i class="fa">
+                    <!-- 折叠展开icon -->
+                    <svg t="1676776871995" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="683" width="20" height="20"><path d="M985.6 51.2h-947.2a38.4 38.4 0 0 0 0 76.8h947.2a38.4 38.4 0 0 0 0-76.8z m-460.8 281.6h-486.4a38.4 38.4 0 0 0 0 76.8h486.4a38.4 38.4 0 0 0 0-76.8z m0 281.6h-486.4a38.4 38.4 0 0 0 0 76.8h486.4a38.4 38.4 0 0 0 0-76.8z m460.8 281.6h-947.2a38.4 38.4 0 0 0 0 76.8h947.2a38.4 38.4 0 0 0 0-76.8z m18.2016-406.8864l-275.5584-137.7792a25.6 25.6 0 0 0-37.0432 22.8864v275.5584a25.6 25.6 0 0 0 37.0432 22.8864l275.5584-137.7792a25.6 25.6 0 0 0 0-45.7728z" fill="#707070" p-id="684"></path></svg>
+                </i>
+            </a>
+        </li>
+        
+        <!-- 天气 -->
+        <li>
+          <div data-v-41ba7e2c="" id="he-plugin-simple" style="position: relative;">
+           <!--无用 <script data-v-41ba7e2c="" type="text/javascript" src="../txt/maps"></script> -->
+            <div data-v-41ba7e2c="" class="s-sticker" style="font-size: 1.4em; cursor: pointer; padding: 30px 10px; background-color: transparent; border-radius: 5px;">
+                  <div data-v-41ba7e2c="" style="width: 0px;"></div> 
+                  <div data-v-7d48daab="" data-v-41ba7e2c="" class="s-sticker-city module" style="font-size: 16px; color: rgb(170, 170, 170); vertical-align: middle;">广州</div>
+                  <div data-v-7d48daab="" data-v-41ba7e2c="" class="s-sticker-cond module" style="vertical-align: middle;">
+                      <img data-v-7d48daab="" src="../img/100d.png" style="width: 24px; height: 24px;"></div>
+                      <div data-v-7d48daab="" data-v-41ba7e2c="" class="s-sticker-tmp module" style="font-size: 16px; color: rgb(170, 170, 170); vertical-align: middle;">29°C</div>
+                      <div data-v-7d48daab="" data-v-41ba7e2c="" class="module" style="vertical-align: middle;"></div>
+                      <div data-v-7d48daab="" data-v-41ba7e2c="" class="s-sticker-qlty module" style="color: rgb(228, 198, 0); font-size: 16px; vertical-align: middle;">良</div> 
+                      <div data-v-41ba7e2c="" style="width: 100%;"></div>
+                  </div> 
+            <div data-v-41ba7e2c=""><!----></div>
+          </div>
+          <script>WIDGET = {CONFIG: {"modules": "12034","background": 5,"tmpColor": "aaa","tmpSize": 16,"cityColor": "aaa","citySize": 16,"aqiSize": 16,"weatherIconSize": 24,"alertIconSize": 18,"padding": "30px 10px 30px 10px","shadow": "1","language": "auto","borderRadius": 5,"fixed": "false","vertical": "middle","horizontal": "left","key": "a922adf8928b4ac1ae7a31ae7375e191"}}</script>
+          <script src="../js/he-simple-common.js"></script>
+        </li>
+        <!-- 天气 end -->
+        
+      </ul>
+      
+      <!-- 右上角导航 -->
+      <ul class="user-info-menu list-inline list-unstyled">
+        <li class="hidden-sm hidden-xs">
+            <a href="../" target="_blank"><i class="fa"></i>🏠 聚合导航</a>
+        </li>
+      </ul>
+      
+    </div>
+</nav>
+
+
+
+
+
+<!-- 搜索区 -->
+<div id="search" class="s-search">
+
+    <div id="search-list" class="hide-type-list" style="margin-top:5%">
+        <!-- 默认常用 -->
+        <div class="s-type">
+            <span></span>
+            <div class="s-type-list animated fadeInUp">
+                <label for="type-searx">常用</label>
+                <label for="type-search">搜索</label>
+                <label for="type-ffanyi">翻译</label>
+                <label for="type-zhihu">社区</label>
+                <label for="type-douyin">视频</label>
+                <label for="type-ask1">百科</label>
+                <label for="type-br">工具</label>
+                <label for="type-jiumo">书籍</label>
+                <label for="type-zhiyoubang">软件</label>
+                <label for="type-icon">设计</label>
+                <label for="type-gitee">码云</label>
+                <label for="type-jingdong">电商</label>
+                <label for="type-zhaopin">求职</label>
+                <label for="type-guobiao">生活</label>
+                <label for="type-yunpanjingling">资源</label>
+            </div>
+        </div>
+        
+        <!--常用-->
+        <div class="search-group group-a s-current">
+            <span class="type-text">常用&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                
+                <li>
+                    <input  checked="" hidden="" type="radio" name="type" id="type-searx" value="https://searx.org/search?q=" data-placeholder="让搜索的广告少一点，再少一点">
+                    <label for="type-searx">
+                        <span style="color:#313439">Searx</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-fsou" value="https://fsoufsou.com/search?q=" data-placeholder="F搜：无广告的良心搜索">
+                    <label for="type-fsou">
+                        <span style="color:#3B83FA">F搜</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-ask" value="https://ask.nocode.com/search?q=" data-placeholder="就诊问问：简单描述你的问题（如：头疼）">
+                    <label for="type-ask">
+                        <span style="color:#19b955">就诊问问</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-soupian" value="https://soupian.app/search?key=" data-placeholder="搜片：搜你想看的影片">
+                    <label for="type-soupian">
+                        <span style="color:#f40">搜片</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type- zimuku1" value="https://so.zimuku.org/search?q=" data-placeholder="字幕库(zimuku) ：中文字幕下载网站">
+                    <label for="type- zimuku1">
+                        <span style="color:#007daa">字幕库</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <!--搜索-->
+        <div class="search-group group-b">
+            <span class="type-text">搜索&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-search" value="https://searx.org/search?q=" data-placeholder="Searx：开源搜索引擎">
+                    <label for="type-search">
+                        <span style="color:#313439">Searx</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsoufsou.com/search?q=" data-placeholder="F搜：无广告的良心搜索">
+                    <label for="type-fsou1">
+                        <span style="color:#3B83FA">F搜</span>
+                    </label>
+                </li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-gsou1" value="https://g.aunger.cf/search?q=" data-placeholder="Google搜索：谷歌镜像搜索引擎">
+                    <label for="type-gsou1">
+                        <span style="color:#3B83FA">谷</span><span style="color:#F3442C">歌</span><span style="color:#FFC300">镜</span><span style="color:#F54231">像</span>
+                    </label>
+                </li>
+                <li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌搜索（无使用条件者勿选）"><label for="type-google1"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-duckduckgo" value="https://duckduckgo.com/?q=" data-placeholder="DockDockGo-匿名搜索引擎（科学上网）"><label for="type-duckduckgo"><span  style="color:#ff5943">DockGo</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-360" value="https://www.wuzhuiso.com/s?ie=utf-8&fr=none&src=home_suggst_revise&q=" data-placeholder="360无追搜索：无追让你的搜索，不再被追踪"><label for="type-360"><span style="color:#19b955">360无追</span></label></li>
+                <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing"><span style="color:#007daa">Bing</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索"><label for="type-sm"><span style="color:#ff8608">神马</span></label></li>
+                <li>
+                    <input hidden="" type="radio" name="type" id="type-yandex" value="https://yandex.com/search/?text=" data-placeholder="Yandex搜索：俄罗斯搜索引擎">
+                    <label for="type-yandex">
+                        <span style="color:#FFC300">Yandex</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <!--翻译-->
+        <div class="search-group group-c">
+            <span class="type-text">翻译&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-ffanyi" value="https://fsoufsou.com/translate?t=" data-placeholder="FSO翻译"><label for="type-ffanyi"><span style="color:#3B83FA">FSO翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type- deeplfanyi" value="https://www.deepl.com/zh/translator#zh/en/" data-placeholder="DeepL翻译：全世界最准确的翻译"><label for="type- deeplfanyi"><span style="color:#007daa">DeepL翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-baidufanyi" value="https://fanyi.baidu.com/#zh/en/" data-placeholder="百度翻译"><label for="type-baidufanyi"><span style="color:#2100E0">百度翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-yandexfanyi" value="https://translate.yandex.com/?lang=zh-en&text=" data-placeholder="Yandex翻译"><label for="type-yandexfanyi"><span style="color:#FFC300">Yandex翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-sogoufanyi" value="https://fanyi.sogou.com/text?keyword=" data-placeholder="搜狗翻译"><label for="type-sogoufanyi"><span style="color:#ff5943">搜狗翻译</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-360fanyi" value="https://fanyi.so.com/#" data-placeholder="360翻译"><label for="type-360fanyi"><span style="color:#19b955">360翻译</span></label></li>
+            </ul>
+        </div>
+        
+        <!--社区-->
+        <div class="search-group group-c">
+            <span class="type-text">社区&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎"><label for="type-zhihu"><span style="color:#0084ff">知乎</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-wechat" value="http://weixin.sogou.com/weixin?type=2&amp;query=" data-placeholder="微信"><label for="type-wechat"><span style="color:#00a06a">微信</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span style="color:#e6162d">微博</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣"><label for="type-douban"><span style="color:#55a300">豆瓣</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区"><label for="type-why"><span style="color:#428bca">搜外问答</span></label></li>
+            </ul>
+        </div>
+        
+        <!--视频-->
+        <div class="search-group group-d">
+            <span class="type-text">视频&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-douyin" value="https://www.douyin.com/search/" data-placeholder="抖音：搜索短视频关键词"><label for="type-douyin"><span style="color:#313439">抖音</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-bili" value="https://search.bilibili.com/all?vt=35422508&keyword=" data-placeholder="哔哩哔哩：搜索想看的视频"><label for="type-bili"><span style="color:#ff5943">B站</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-kuaishou" value="https://www.kuaishou.com/search/video?searchKey=" data-placeholder="快手：搜索想看的短视频"><label for="type-kuaishou"><span style="color:#ff8608">快手</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-xigua" value="https://www.ixigua.com/search/" data-placeholder="西瓜视频：搜索想看的视频"><label for="type-xigua"><span style="color:#F3442C">西瓜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tencentvideo" value="https://v.qq.com/x/search/?q=" data-placeholder="腾讯视频：搜索想看的视频"><label for="type-tencentvideo"><span style="color:#2100E0">腾讯</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-iqiyi" value="https://so.iqiyi.com/so/q_" data-placeholder="爱奇艺：搜索想看的视频"><label for="type-iqiyi"><span style="color:#19b955">爱奇艺</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tencentvideo" value="https://so.youku.com/search_video/q_" data-placeholder="优酷：搜索想看的视频"><label for="type-tencentvideo"><span style="color:#3B83FA">优酷</span></label></li>
+            </ul>
+        </div>
+        
+        <!--百科-->
+        <div class="search-group group-e">
+            <span class="type-text">百科&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                
+				<li><input hidden="" type="radio" name="type" id="type-ask1" value="https://ask.nocode.com/search?q=" data-placeholder="就诊问问：简单描述你的问题（如：头疼）"><label for="type-ask1"><span style="color:#19b955">就诊问问</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-lishichelun" value="https://www.lishichelun.com/search?q=" data-placeholder="历史车轮：搜索历史朝代/人物知识"><label for="type-lishichelun"><span style="color:#c91623">历史车轮</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-wikihow" value="https://zh.wikihow.com/wikiHowTo?search=" data-placeholder="WikiHow：学点什么生活技能（如：做饭）"><label for="type-wikihow"><span  style="color:#19b955">WikiHow</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-wikipedia" value="https://wiki.aunger.cf/w/index.php?&title=Special%3A搜索&go=前往&search=" data-placeholder="维基百科：人人可编辑的自由百科全书"><label for="type-wikipedia"><span style="color:#313439">维基百科</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-mbazk" value="https://wiki.mbalib.com/wiki/Special:Search?search=" data-placeholder="MBA智库：经管类专业百科平台"><label for="type-mbazk"><span style="color:#2100E0">MBA智库</span></label></li>
+            </ul>
+        </div>
+        
+        <!--工具-->
+        <div class="search-group group-f">
+            <span class="type-text">工具&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-br" value="http://rank.chinaz.com/all/" data-placeholder="请输入网址(不带http://)"><label for="type-br"><span style="color:#55a300">权重查询</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-links" value="http://link.chinaz.com/" data-placeholder="请输入网址(不带http://)"><label for="type-links"><span style="color:#313439">友链检测</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-icp" value="https://icp.aizhan.com/" data-placeholder="请输入网址(不带http://)"><label for="type-icp"><span style="color:#ffac00">备案查询</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-ping" value="http://ping.chinaz.com/" data-placeholder="请输入网址(不带http://)"><label for="type-ping"><span style="color:#00599e">PING检测</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-404" value="http://tool.chinaz.com/Links/?DAddress=" data-placeholder="请输入网址(不带http://)"><label for="type-404"><span style="color:#f00">死链检测</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-ciku" value="http://www.ciku5.com/s?wd=" data-placeholder="请输入关键词"><label for="type-ciku"><span style="color:#016DBD">关键词挖掘</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-tool" value="https://tool.lu/search/?q=" data-placeholder="在线工具：实用在线工具大全（如：IPv4）"><label for="type-tool"><span style="color:#19b955">在线工具</span></label></li> 
+            </ul>
+        </div>
+        
+        <!--书籍-->
+        <div class="search-group group-g">
+            <span class="type-text">书籍&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-jiumo" value="https://www.jiumodiary.com" data-placeholder="鸠摩搜书"><label for="type-jiumo"><span style="color:#c91623">鸠摩搜书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-weixinbook" value="https://weread.qq.com/#search" data-placeholder="微信读书"><label for="type-weixinbook"><span style="color:#00a06a">微信读书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dbbook" value="https://search.douban.com/book/subject_search?search_text=" data-placeholder="豆瓣读书"><label for="type-dbbook"><span style="color:#55a300">豆瓣读书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Pansoso" value="https://www.pansoso.com/zh/" data-placeholder="Pansoso搜书"><label for="type-Pansoso"><span style="color:#888888">Pansoso搜书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-xiongmaosoushu" value="https://ebook.huzerui.com/#/result?keyword=" data-placeholder="熊猫搜书"><label for="type-xiongmaosoushu"><span style="color:#00599e">熊猫搜书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-LoreFree" value="https://ebook2.lorefree.com/site/index?s=" data-placeholder="LoreFree"><label for="type-LoreFree"><span style="color:#55a300">LoreFree</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-SoBook" value="https://sobooks.cc/search/" data-placeholder="SoBook"><label for="type-SoBook"><span style="color:#016DBD">SoBook</span></label></li>
+            </ul>
+        </div>
+        
+        <!--软件-->
+        <div class="search-group group-d">
+            <span class="type-text">软件&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-zhiyoubang" value="https://creatorsdaily.com/?keyword=" data-placeholder="创造者日报：每天发现有趣的软件"><label for="type-zhiyoubang"><span style="color:#ff8608">创造者</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-jifeng" value="https://xinquji.com/search?q=" data-placeholder="新趣集：一起发现有趣的产品"><label for="type-jifeng"><span style="color:#313439">新趣集</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-guokebohe" value="https://www.ghpym.com/?s=" data-placeholder="果核剥壳综合破解软件"><label for="type-guokebohe"><span style="color:#F3442C">果核剥壳</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-chaoniu" value="https://2535802807.com/news/?list_refer-theme-" data-placeholder="超牛辅助网：游戏外挂辅助"><label for="type-chaoniu"><span style="color:#19b955">超牛辅助</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-zd423" value="https://www.423down.com/?s=" data-placeholder="ZD423综合破解软件"><label for="type-zd423"><span style="color:#3B83FA">ZD423</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Xclient" value="https://xclient.info/search/s/" data-placeholder="Xclient：精品Mac应用分享"><label for="type-Xclient"><span style="color:#007daa">Xclient</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-orsoon" value="https://s.orsoon.com/search?k=" data-placeholder="Orsoon：未来软件园搜索"><label for="type-orsoon"><span style="color:#2100E0">Orsoon</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-ruancang" value="https://www.ruancang.net/#/sim?page=0&id=0&q=" data-placeholder="软件仓库：专业付费软件破解版下载（如：Photoshop）"><label for="type-ruancang"><span style="color:#ff5943">软仓</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-ourmacs" value="https://ourmacs.com/search/apps?q=" data-placeholder="OurMacs：简洁好用的Mac软件和教程搜索引擎"><label for="type-ourmacs"><span style="color:#888888">OurMacs</span></label></li>
+            </ul>
+        </div>
+        
+        <!--设计-->
+        <div class="search-group group-h">
+            <span class="type-text">设计&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li>
+				    <input hidden="" type="radio" name="type" id="type-icon" value="https://www.iconfont.cn/search/index?searchType=icon&q=" data-placeholder="阿里巴巴矢量库">
+				    <label for="type-icon"><span style="color:#2100E0">阿里矢量库</span></label>
+				</li>
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-eicon" value="https://www.easyicon.net/language.en/iconsearch/" data-placeholder="Easy icon">
+				    <label for="type-eicon"><span style="color:#313439">Easyicon</span></label>
+				</li>
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-huaban" value="https://huaban.com/search?q=" data-placeholder="花瓣：设计师寻找灵感的天堂">
+				    <label for="type-huaban"><span style="color:#F3442C">花瓣</span></label>
+				</li>
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-zcool" value="https://www.zcool.com.cn/search/content?word=" data-placeholder="站酷：发现更好的设计">
+				    <label for="type-zcool"><span style="color:#ff8608">站酷</span></label>
+				</li>
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-UI" value="https://s.ui.cn/index.html?type=project&other_w=" data-placeholder="UI中国：UICN用户体验设计平台">
+				    <label for="type-UI"><span style="color:#3B83FA">UI中国</span></label>
+				</li>
+				<li><input hidden="" type="radio" name="type" id="type-588ku" value="https://588ku.com/" data-placeholder="千图网：海量设计素材下载"><label for="type-588ku"><span style="color:#19b955">千图网</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-cc0" value="https://cc0.cn/sou/" data-placeholder="CC0：免费可商用图片下载"><label for="type-cc0"><span style="color:#F54231">CC0图</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-unsp" value="https://unsplash.com/search/photos/" data-placeholder="Unsplash Image：免费可下载商用图片"><label for="type-unsp"><span style="color:#888888">Unsplash</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-zhanzhangzhijia" value="http://aspx.sc.chinaz.com/query.aspx?keyword=" data-placeholder="站长之家：免费图片素材下载"><label for="type-zhanzhangzhijia"><span style="color:#007daa">站长之家</span></label></li>
+            </ul>
+        </div>
+        
+        <!--码云-->
+        <div class="search-group group-i">
+            <span class="type-text">码云&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+				<li><input hidden="" type="radio" name="type" id="type-gitee" value="https://search.gitee.com/?skin=rec&type=repository&q=" data-placeholder="Gitee：国内的开源代码托管平台"><label for="type-gitee"><span style="color:#ff5943">Gitee</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-github" value="https://github.com/search?q=" data-placeholder="GitHub：世界上最大的代码托管网站和开源社区"><label for="type-github"><span style="color:#313439">GitHub</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-greasyfork" value="https://greasyfork.org/zh-CN/scripts?utf8=%E2%9C%93&q=" data-placeholder="Greasy Fork（油猴）：油猴插件脚本搜索"><label for="type-greasyfork"><span style="color:#F54231">油猴</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-whois" value="http://whois.chinaz.com/" data-placeholder="域名Whois查询：请输入网址（如: chinaz.com）"><label for="type-whois"><span style="color:#2100E0">Whois</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Alicloud" value="https://www.alibabacloud.com/tc/domain/search?keyword=" data-placeholder="阿里云域名Whois查询：请输入网址（如: chinaz.com）"><label for="type-Alicloud"><span style="color:#ff8608">阿里云</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-docker" value="https://hub.docker.com/search?q=" data-placeholder="Docker镜像搜索"><label for="type-docker"><span style="color:#888888">Docker</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-pypi" value="https://pypi.org/search/?q=" data-placeholder="Python包搜索"><label for="type-pypi"><span style="color:#FFC300">Python</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-pkgs" value="https://pkgs.org/search/?q=" data-placeholder="Linux deb/rpm 搜索"><label for="type-pkgs"><span style="color:#007daa">Linux</span></label></li>
+            </ul>
+        </div>
+        
+        <!--电商-->
+        <div class="search-group group-j">
+            <span class="type-text">电商&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-jingdong" value="https://search.jd.com/Search?keyword=" data-placeholder="京东：输入搜索的商品名称"><label for="type-jingdong"><span style="color:#c91623">京东</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q=" data-placeholder="淘宝：输入搜索的商品名称"><label for="type-taobao"><span style="color:#f40">淘宝</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dang" value="http://search.dangdang.com/?key=" data-placeholder="当当网：输入搜索的商品名称"><label for="type-dang"><span style="color:#ff8608">当当</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-amazon" value="https://www.amazon.com/s?k=" data-placeholder="亚马逊美国区：输入搜索的商品名称"><label for="type-amazon"><span  style="color:#ff5943">亚马逊美区</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-amazoncn" value="https://www.amazon.cn/s?k=" data-placeholder="亚马逊海外购：输入搜索的商品名称"><label for="type-amazoncn"><span style="color:#19b955">亚马逊</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-kaola" value="https://search.kaola.com/search.html?key=" data-placeholder="考拉海购：输入搜索的商品名称"><label for="type-kaola"><span style="color:#3B83FA">考拉海购</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-you163" value="http://you.163.com/search?keyword=" data-placeholder="网易严选：输入搜索的商品名称"><label for="type-you163"><span style="color:#007daa">网易严选</span></label></li>
+            </ul>
+        </div>
+        
+        <!--求职-->
+        <div class="search-group group-l">
+            <span class="type-text">求职&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-zhaopin" value="https://sou.zhaopin.com/jobs/searchresult.ashx?kw=" data-placeholder="智联招聘"><label for="type-zhaopin"><span style="color:#689fee">智联招聘</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-51job" value="https://search.51job.com/?" data-placeholder="前程无忧"><label for="type-51job"><span style="color:#ff6000">前程无忧</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-lagou" value="https://www.lagou.com/jobs/list_" data-placeholder="拉钩网"><label for="type-lagou"><span style="color:#00b38a">拉钩网</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-liepin" value="https://www.liepin.com/zhaopin/?key=" data-placeholder="猎聘网"><label for="type-liepin"><span style="color:#303a40">猎聘网</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-tycr" value="https://www.tianyancha.com/humansearch/" data-placeholder="天眼查（查人）：输入姓名"><label for="type-tycr"><span style="color:#F3442C">查人</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tycgs" value="https://www.tianyancha.com/search?key=" data-placeholder="天眼查（查公司））：输入公司名称"><label for="type-tycgs"><span style="color:#2100E0">查公司</span></label></li>
+            </ul>
+        </div>
+        
+        <!--生活-->
+        <div class="search-group group-k">
+            <span class="type-text">生活&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-guobiao" value="http://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=" data-placeholder="国标：国家标准公共平台检索"><label for="type-guobiao"><span style="color:#2100E0">国标</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-xiachufang" value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房"><label for="type-xiachufang"><span style="color:#dd3915">下厨房</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&amp;s=" data-placeholder="香哈菜谱"><label for="type-xiangha"><span style="color:#930">香哈菜谱</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-12306" value="http://www.12306.cn/?" data-placeholder="12306"><label for="type-12306"><span style="color:#07f">12306</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?" data-placeholder="去哪儿"><label for="type-qunar"><span style="color:#00afc7">去哪儿</span></label></li>
+                <li><input hidden="" type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?" data-placeholder="快递100"><label for="type-快递100"><span style="color:#3278e6">快递100</span></label></li>
+            </ul>
+        </div>
+        
+         <!--资源-->
+        <div class="search-group group-m">
+            <span class="type-text">资源&nbsp;
+                <!--下拉图标-->
+                <svg t="1676777695134" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7145" width="16" height="16"><path d="M511.9 819c-21.7 0-43.4-8.3-59.9-24.8-33.1-33.1-33.1-86.7 0-119.8l363.5-344.7c33.1-33.1 86.7-33.1 119.8 0s33.1 86.7 0 119.8L571.7 794.2c-16.5 16.6-38.2 24.8-59.8 24.8z" fill="#2c2c2c" p-id="7146"></path><path d="M512.1 819c21.7 0 43.4-8.3 59.9-24.8 33.1-33.1 33.1-86.7 0-119.8L208.5 329.8c-33.1-33.1-86.7-33.1-119.8 0s-33.1 86.7 0 119.8l363.5 344.7c16.6 16.5 38.3 24.7 59.9 24.7z" fill="#2c2c2c" p-id="7147"></path></svg>
+            &nbsp;</span>
+            <ul class="search-type">
+                <li><input hidden="" type="radio" name="type" id="type-yunpanjingling" value="https://yun.hei521.cn/index.php/search/" data-placeholder="天翼小站：资源搜索"><label for="type-yunpanjingling"><span style="color:#3B83FA">天翼小站</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tgmiao" value="http://meow.tg/search/" data-placeholder="TG喵：电报资源搜索"><label for="type-tgmiao"><span style="color:#007daa">TG喵</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-disboard" value="https://disboard.org/zh-cn/servers/tag/" data-placeholder="Disboard：Disboard聊天房资源搜索"><label for="type-disboard"><span style="color:#2100E0">Disboard</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-soupian1" value="https://soupian.app/search?key=" data-placeholder="搜片：搜你想看的影片"><label for="type-soupian1"><span style="color:#f40">搜片</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dianyinggo" value="https://www.dianyinggou.com/so/" data-placeholder="电影狗：电影搜索引擎"><label for="type-dianyinggo"><span style="color:#ff8608">电影狗</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-alipansou" value="https://www.alipansou.com/search?k=" data-placeholder="猫狸盘搜：阿里云盘资源搜索"><label for="type-alipansou"><span style="color:#3B83FA">阿里盘搜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-555dy" value="https://www.555dy1.com/vodsearch/-------------.html?wd=" data-placeholder="555电影：输入新剧/电影名称搜索"><label for="type-555dy"><span style="color:#FFC300">555电影</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-xiaokesousou" value="https://www.xiaozhukuaipan.com/s/search?q=" data-placeholder="小猪快盘：网盘资源搜索"><label for="type-xiaokesousou"><span style="color:#313439">小猪快盘</span></label></li>
+            </ul>
+        </div>
+        
+        <!--搜索按钮-->
+        <form action="https://fsoufsou.com/search?q=" method="get" target="_blank" id="super-search-fm">
+            <input type="text" id="search-text" placeholder="F搜索" style="outline:0">
+            <button type="submit">
+                <i class="fa iconfont icon-search"></i>
+            </button>
+        </form>
+    
+    <div class="set-check hidden-xs">
+        <!--设置搜索空白-->
+        <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+    </div>
+        
+        
+        
+</div>
+ 
+    
+</div>
+
+<script type="text/javascript">
+eval(function(e,t,a,c,i,n){if(i=function(e){return(e<t?"":i(parseInt(e/t)))+(35<(e%=t)?String.fromCharCode(e+29):e.toString(36))},!"".replace(/^/,String)){for(;a--;)n[i(a)]=c[a]||i(a);c=[function(e){return n[e]}],i=function(){return"\\w+"},a=1}for(;a--;)c[a]&&(e=e.replace(new RegExp("\\b"+i(a)+"\\b","g"),c[a]));return e}('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',62,77,"||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split("|"),0,{}));
+</script>
+
+
+
+
+<!-- 内容区 -->
+<div class="sites-list" style="margin-bottom: 8.5rem;">
+        
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="#第三方GPT"></i>第三方GPT</h4>
+                <div class="row">
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://chat.gptchinese.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="免费，几乎不限制使用，支持使用自定义API">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>ChatGPT中文网</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">免费，几乎不限制使用，支持使用自定义API</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://chat1.yqcloud.top/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="免费不限制，速度非常棒！使用GPT-3.5 模型。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>ChatGPT</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">免费不限制，速度非常棒！使用GPT-3.5 模型。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://openprompt.co/ChatGPT" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="一个非常棒的ChatGPT站点，可免费无限制使用，速度非常好">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Openprompt ChatGPT</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">一个非常棒的ChatGPT站点，可免费无限制使用，速度非常好</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://zcc.app/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="基于最新gpt-3.5-turbo API，响应速度快，使用无限制">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>ChatGPTWEB</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">基于最新gpt-3.5-turbo API，响应速度快，使用无限制</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div> 
+        <br>
+        
+        
+        <h4 class="text-gray" style="display: inline-block;"><i class="icon-io-tag" style="margin-right: 27px;" id="#官方GPT"></i>官方GPT</h4>
+                <div class="row">
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://yiyan.baidu.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="百度全新一代知识增强大语言模型，文心大模型家族的新成员，能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>文心一言</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">百度全新一代知识增强大语言模型，文心大模型家族的新成员，能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://chat.openai.com/chat" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="官方网站需要科学上网，由OpenAI开发的一个人工智能聊天机器人程序，于2022年11月推出。该程序使用基于GPT-3.5架构的大型语言模型并通过强化学习进行训练。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>ChatGPT</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">官方网站需要科学上网，由OpenAI开发的一个人工智能聊天机器人程序，于2022年11月推出。该程序使用基于GPT-3.5架构的大型语言模型并通过强化学习进行训练。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.bing.com/new" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="微软新的必应（需要美国IP地址）为您提供可靠的、最新的搜索结果，并为您的问题提供完整的答案。当然，它也引用了消息来源。你爱怎么问就怎么问。做一个复杂的搜索。跟进。在聊天中进行改进。你会被理解，并感到惊讶。得到答案，而不是被选项压垮。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>New Bing</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">微软新的必应（需要美国IP地址）为您提供可靠的、最新的搜索结果，并为您的问题提供完整的答案。当然，它也引用了消息来源。你爱怎么问就怎么问。做一个复杂的搜索。跟进。在聊天中进行改进。你会被理解，并感到惊讶。得到答案，而不是被选项压垮。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://bard.google.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="谷歌对标OPenAI ChatGPT的公测产品，目前只支持英文，需要美国IP地址">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Google Bard</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">谷歌对标OPenAI ChatGPT的公测产品，目前只支持英文，需要美国IP地址</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://wenxin.baidu.com/younger/creativeSpace" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="文心大模型包含文本生成、文生图、智能对话等技能，可用于文化传媒、艺术创作、教育科研、金融保险、医疗健康等多个应用场景">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>百度文心AI创意应用空间</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">文心大模型包含文本生成、文生图、智能对话等技能，可用于文化传媒、艺术创作、教育科研、金融保险、医疗健康等多个应用场景</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://wenxin.baidu.com/baizhong/index" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="文心百中大模型驱动的产业级搜索系统">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>文心百中垂直搜索</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">文心百中大模型驱动的产业级搜索系统</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.futurepedia.io" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国外一个在线最大的人工智能AI工具目录，网站在线收录各种人工智能AI工具。网站每天更新5个以上的新AI工具，对人工智能AI 感兴趣的可以试试这个非常不错的在线人工智能Al工具目录，总能找到你喜欢满意的人工智能AI工具。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>未来百科</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">国外一个在线最大的人工智能AI工具目录，网站在线收录各种人工智能AI工具。网站每天更新5个以上的新AI工具，对人工智能AI 感兴趣的可以试试这个非常不错的在线人工智能Al工具目录，总能找到你喜欢满意的人工智能AI工具。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://theresanaiforthat.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国外一个人工智能AI工具分享列表网站，网站定期收集更新人工智能AI工具，可按照时间线和分类查看，作者从2015到现在坚持不断收集分享，非常不错。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Thereisan AI for that</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">国外一个人工智能AI工具分享列表网站，网站定期收集更新人工智能AI工具，可按照时间线和分类查看，作者从2015到现在坚持不断收集分享，非常不错。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.futuretools.io" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国外一个AI工具导航网站,已收集了173个各类Al工具，可根据聊天、金融、娱乐、视频、代码等多个筛选找到自己心仪的AI工具。Future Tools的目标是让人们更容易快速找到有用的人工智能解决方案。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>FutureTools</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">国外一个AI工具导航网站,已收集了173个各类Al工具，可根据聊天、金融、娱乐、视频、代码等多个筛选找到自己心仪的AI工具。Future Tools的目标是让人们更容易快速找到有用的人工智能解决方案。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://airadar.getinference.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="找到你需要的一切，主要用于创意和营销的AI工具 500+产品，产品功能包含:Al写你的公关稿、生成迷宫、生成品牌标识、人工智能市场研究和幻灯片制作、帮助你写出更好简报的Al等等。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Getinference AI Radar</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">找到你需要的一切，主要用于创意和营销的AI工具 500+产品，产品功能包含:Al写你的公关稿、生成迷宫、生成品牌标识、人工智能市场研究和幻灯片制作、帮助你写出更好简报的Al等等。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.creaitives.com/tools" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Creaitives网站定期抓取所有其他AI数据库并汇总数据，目前，已收录了800+AI工具，配合浏览器翻译插件使用会更好。AI工具质量很高。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>最大的人工智能数据库</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">Creaitives网站定期抓取所有其他AI数据库并汇总数据，目前，已收录了800+AI工具，配合浏览器翻译插件使用会更好。AI工具质量很高。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://www.aitoolhunt.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1400多种AI工具按semrush排名排序。分类详细,允许用户自己上传AI工具因此网站更新速度快，AI数量庞大。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>AI Tool Hunt</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">1400多种AI工具按semrush排名排序。分类详细,允许用户自己上传AI工具因此网站更新速度快，AI数量庞大。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://melobytes.com/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="专注于声音的AI网站，可以根据文案生成歌词、配乐等等，非常有趣，网站也在不断更新新功能，对于有音乐或者视频制作需求的小伙伴，可以去试试，非常有意思。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                                
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Melobytes</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">专注于声音的AI网站，可以根据文案生成歌词、配乐等等，非常有趣，网站也在不断更新新功能，对于有音乐或者视频制作需求的小伙伴，可以去试试，非常有意思。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!--网址模版2-->
+                    <div class="xe-card col-sm-4 col-md-3 col-lg-2 ">
+                        <!--链接网址-->
+                        <a href="https://saasaitools.com" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="SaaS AI工具是您获取新人工智能工具和每日人工智能新闻的来源，以帮助将您的创造力提升到一个新的水平。">
+                            <!--图文区域-->
+                            <div class="xe-comment-entry">
+                                <!--图片-->
+                               
+                                <!--简介-->
+                                <div class="xe-comment">
+                                    <!--名称-->
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>SaaS AI工具</strong>
+                                    </div>
+                                    <!--内容描述-->
+                                    <p class="overflowClip_1">SaaS AI工具是您获取新人工智能工具和每日人工智能新闻的来源，以帮助将您的创造力提升到一个新的水平。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+        <br>
+        
+        
+
+</div>
+
+
+
+
+<!-- 底部信息 -->
+<footer class="main-footer sticky footer-type-1" >
+                
+                <!-- 右下角图标 -->
+                <div class="go-up">
+                    
+                    <!-- 置顶 -->
+                    <a href="#go-top" rel="go-top"  style="margin-top:10px;"  title="回到顶部">
+                        <i class="fa">
+                            <svg t="1673334814297" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2817" width="20" height="20"><path d="M829.31 607.6L548.07 234.1c-12.93-19.17-41.01-19.61-54.82-0.89L197.3 606.71c-16.05 22.28-0.45 53.49 27.19 53.49h139.06v173.38c0 26.3 21.39 48.14 48.14 48.14H612.7c26.29 0 48.13-21.39 48.13-48.14V660.2h140.4c27.19 0 43.24-30.31 28.08-52.6z" p-id="2818" fill="#ffffff"></path><path d="M226.72 218.06h570.5c20.95 0 37.89-16.94 37.89-37.88s-16.94-37.88-37.89-37.88h-570.5c-20.95 0-37.88 16.94-37.88 37.88s16.94 37.88 37.88 37.88z" p-id="2819" fill="#ffffff"></path></svg>
+                        </i>
+                    </a>
+                    
+                    <!-- 反馈 -->
+                    <a target="_blank" rel="noopener" href="mailto:vip@aunger.ml"  style="margin-top:10px;"  title="邮件反馈">
+                        <i class="fa">
+                            <svg t="1673335849504" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5301" width="20" height="20"><path d="M774.682947 53.894737h-525.473684A87.578947 87.578947 0 0 0 161.684211 141.419789v250.125474L512 640.646737l350.315789-249.101474V141.419789A87.471158 87.471158 0 0 0 774.682947 53.894737zM565.894737 323.368421H296.421053a26.947368 26.947368 0 0 1 0-53.894737h269.473684a26.947368 26.947368 0 0 1 0 53.894737z m161.68421-107.789474H296.421053a26.947368 26.947368 0 0 1 0-53.894736h431.157894a26.947368 26.947368 0 0 1 0 53.894736z m260.634948 152.522106L558.457263 673.684211l429.702737 305.529263A79.656421 79.656421 0 0 0 997.052632 943.157895v-538.947369a82.620632 82.620632 0 0 0-8.892632-36.001684zM26.947368 404.210526v538.947369A80.842105 80.842105 0 0 0 107.789474 1024h808.421052a78.901895 78.901895 0 0 0 32.336842-6.898526L35.84 368.047158A80.518737 80.518737 0 0 0 26.947368 404.210526z" fill="#ffffff" p-id="5302"></path></svg>
+                        </i>
+                    </a>
+                    
+                    <!-- 置底 -->
+                     <a href="#go-bottom" rel="go-bottom"  style="margin-top:10px;"  title="去往底部" >
+                        <i class="fa">
+                            <svg t="1673334843531" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3321" width="20" height="20"><path d="M818.1 881.8h-602c-17.7 0-32 14.3-32 32s14.3 32 32 32h602c17.7 0 32-14.3 32-32 0-17.6-14.3-32-32-32zM820.3 441.6H677.1V138.4c0-35.3-28.7-64-64-64h-192c-35.3 0-64 28.7-64 64v303.3H214c-25.7 0-39.5 30-22.8 49.5l303.2 353c12 13.9 33.5 13.9 45.5 0l303.1-353c16.7-19.5 2.9-49.6-22.7-49.6z" p-id="3322" fill="#ffffff"></path></svg>
+                        </i>
+                    </a>
+                    
+                    <br>
+                    
+                </div>
+                
+                <!-- 版权信息 -->
+                <div class="footer-inner" style="position:fixed; bottom:0; text-align:center;">
+                    <div class="footer-text">
+                        Copyright © 2023 安杰聚合导航&nbsp;&nbsp;Design by <a href="https://aunger.tk" target="_blank" rel="external noopener nofollow"><strong>Aunger</strong></a>
+                        <br>&nbsp;&nbsp;
+                    </div>
+                </div>
+</footer>
+            
+</div>
+
+    <div id="extwaiokist" style="display:none" v="efmeb" q="90764763" c="73.80" i="81" u="1.017" s="09012221" d="1" w="false" e="" a="2" m="BMe=" vn="9axur">
+        <div id="extwaigglbit" style="display:none" v="efmeb" q="90764763" c="73.80" i="81" u="1.017" s="09012221" d="1" w="false" e="" a="2" m="BMe="></div>
+    </div>
+
+
+
+
+</div><!-- 结尾div -->
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).on('click', '.has-sub', function(){
+            var _this = $(this)
+            if(!$(this).hasClass('expanded')) {
+               setTimeout(function(){
+                    _this.find('ul').attr("style","")
+               }, 300);
+              
+            } else {
+                $('.has-sub ul').each(function(id,ele){
+                    var _that = $(this)
+                    if(_this.find('ul')[0] != ele) {
+                        setTimeout(function(){
+                            _that.attr("style","")
+                        }, 300);
+                    }
+                })
+            }
+        })
+        $('.user-info-menu .hidden-xs').click(function(){
+            if($('.sidebar-menu').hasClass('collapsed')) {
+                $('.has-sub.expanded > ul').attr("style","")
+            } else {
+                $('.has-sub.expanded > ul').show()
+            }
+        })
+        $("#main-menu li ul li").click(function() {
+            $(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
+            $(this).addClass('active'); // 添加当前元素的样式
+        });
+        $("a.smooth").click(function(ev) {
+            ev.preventDefault();
+            if($("#main-menu").hasClass('mobile-is-visible') != true)
+                return;
+            public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
+            ps_destroy();
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top - 80
+            }, {
+                duration: 500,
+                easing: "swing"
+            });
+        });
+        return false;
+    });
+
+    var href = "";
+    var pos = 0;
+    $("a.smooth").click(function(e) {
+        e.preventDefault();
+        if($("#main-menu").hasClass('mobile-is-visible') === true)
+            return;
+        $("#main-menu li").each(function() {
+            $(this).removeClass("active");
+        });
+        $(this).parent("li").addClass("active");
+        href = $(this).attr("href");
+        pos = $(href).position().top - 100;
+        $("html,body").animate({
+            scrollTop: pos
+        }, 500);
+    });
+    </script>
+<script type="text/javascript" src="../js/bootstrap.min.js" id="bootstrap-js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js" id="TweenMax-js"></script>
+<script type="text/javascript" id="appjs-js-extra">
+/* <![CDATA[ */
+var theme = {"ajaxurl":"https:\/\/aunger.eu.org\/wp-admin\/admin-ajax.php","addico":"http:\/\/aunger.eu.org\/wp-content\/themes\/WebStack-1.1422\/images\/add.png","version":"1.1725"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/app.js" id="appjs-js"></script>
+<script type="text/javascript" src="../js/lazyload.min.js" id="lazyload-js"></script>
+<!-- 自定义代码 -->
+<!-- end 自定义代码 -->
+
+</body>
+
+</html>
