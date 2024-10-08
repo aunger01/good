@@ -1,0 +1,304 @@
+<!doctype html>
+<html data-n-head-ssr>
+    <head>
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="render" content="webkit">
+        <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta data-n-head="ssr" name="keywords" content="网盘搜索,网盘解析,百度网盘搜索,胖次社区,专业网盘搜索,资源分享,资源问答,百度网盘,网盘搜索,电影资源,电视剧资源、热门电视剧、热门电影">
+        <meta data-n-head="ssr" data-hid="description" name="description" content="安杰资源搜索引擎收录了数十款百度网盘搜索引擎，百度云网盘搜索工具，百度云网盘解析工具，最干净、最好用的资源搜索引擎。提供影视、书籍、软件等资源推荐以及整合信息，让我们更快捷、更平等的获取资源信息">
+        <title>安杰资源搜索 - 资源搜索聚合神器</title>
+        <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico">
+        <style data-vue-ssr-id="2d9b3f00:0 6a1d0462:0 188c479c:0">
+            .nuxt-progress {
+                background-color: #fff;
+                height: 2px;
+                left: 0;
+                opacity: 1;
+                position: fixed;
+                right: 0;
+                top: 0;
+                transition: width .1s,opacity .4s;
+                width: 0;
+                z-index: 999999
+            }
+
+            .nuxt-progress.nuxt-progress-notransition {
+                transition: none
+            }
+
+            .nuxt-progress-failed {
+                background-color: red
+            }
+
+            #__layout,#__nuxt,.nuxt-wrap {
+                height: 100%
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                outline: 0;
+                padding: 0;
+                -webkit-tap-highlight-color: transparent
+            }
+
+            html {
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                color: #333;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                word-spacing: 1px
+            }
+
+            body,html {
+                height: 100%;
+                margin: 0;
+                padding: 0
+            }
+
+            body a {
+                display: none
+            }
+
+            #__nuxt a {
+                display: inline-block
+            }
+
+            input[type=text] {
+                -webkit-appearance: none
+            }
+
+            ul {
+                list-style: none
+            }
+
+            .index-page {
+                display: flex;
+                flex-direction: column;
+                height: 100%
+            }
+
+            .index-page .header {
+                align-items: center;
+                background-color: rgba(250,93,25,.05);
+                border-bottom: 1px solid rgba(250,93,25,.5);
+                display: flex;
+                padding: 10px 20px
+            }
+
+            .index-page .header a {
+                color: inherit;
+                -webkit-text-decoration: none;
+                text-decoration: none
+            }
+
+            .index-page .header h1 {
+                align-items: center;
+                display: flex
+            }
+
+            .index-page .header h1 .logo {
+                height: 30px;
+                margin-right: 4px
+            }
+
+            .index-page .header h1 .name {
+                color: #fa5d19;
+                font-size: 18px
+            }
+
+            .index-page .header .nav-wrap {
+                align-items: center;
+                display: flex;
+                flex: auto;
+                justify-content: center
+            }
+
+            .index-page .header .nav-wrap .nav-item {
+                padding: 0 12px;
+                transition: all .2s ease
+            }
+
+            .index-page .header .nav-wrap .nav-item.active .inner,.index-page .header .nav-wrap .nav-item:hover .inner {
+                position: relative
+            }
+
+            .index-page .header .nav-wrap .nav-item.active .inner:after,.index-page .header .nav-wrap .nav-item:hover .inner:after {
+                background-color: #fa5d19;
+                bottom: -2px;
+                content: " ";
+                height: 2px;
+                left: 0;
+                position: absolute;
+                right: 0
+            }
+
+            .index-page .header .nav-wrap .nav-item.active .inner .name,.index-page .header .nav-wrap .nav-item:hover .inner .name {
+                color: #fa5d19
+            }
+
+            .index-page .header .nav-wrap .nav-item .inner {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                transition: all .2s ease
+            }
+
+            .index-page .header .nav-wrap .nav-item .inner .logo {
+                background-color: #fff;
+                border-radius: 50%;
+                height: 24px;
+                width: 24px
+            }
+
+            .index-page .header .nav-wrap .nav-item .inner .name {
+                color: #333;
+                font-size: 12px;
+                margin-top: 2px
+            }
+
+            .index-page .content {
+                flex: auto
+            }
+
+            .index-page .content iframe {
+                background-color: #fff;
+                height: 100%;
+                width: 100%
+            }
+        </style>
+    </head>
+    <body>
+        <div data-server-rendered="true" id="__nuxt">
+            <!---->
+            <div id="__layout">
+                <div class="nuxt-wrap">
+                    <div class="index-page">
+                        <div class="header">
+                            <a href="/">
+                                <h1>
+                                    <img src="logo@2x-2.png" class="logo">
+                                    <!--<span class="name">安杰资源搜索</span>-->
+                                </h1>
+                            </a>
+                            <ul class="nav-wrap">
+                                <a href="https://www.dashengpan.xyz?from=chaonengsou" target="window" class="nav-item active">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/dashengpan.520357b.png" class="logo">
+                                        <span class="name">大圣盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.luomapan.xyz?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/luomapan.c14a7f3.png" class="logo">
+                                        <span class="name">罗马盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.yubaipan.xyz?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/yubaipan.dd759f8.png" class="logo">
+                                        <span class="name">玉白盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.feifeipan.xyz?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/feifeipan.d111f21.png" class="logo">
+                                        <span class="name">飞飞盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.baimapan.xyz?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/baimapan.7e5410d.png" class="logo">
+                                        <span class="name">白马盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.56wangpan.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/56wangpan.9587acd.png" class="logo">
+                                        <span class="name">56网盘</span>
+                                    </li>
+                                </a>
+                                <a href="http://wjsou.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/wenjiansou.840498a.png" class="logo">
+                                        <span class="name">文件搜</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.pansoso.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/pansousou.830162f.png" class="logo">
+                                        <span class="name">盘搜搜</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.xiaokesoso.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeklEQVRoge1YMUvzUBQ9xjZIFYRYFymZHTooLsWhgziUItKhSAZxEpEODv4CBwenIuIgDlKKiIMoOAQHKSLiVMRBRUUUSylBtJQSilTNc/i+Fl5frUmaaJEcCLTn3XfvPbnnhaZtAAj+ALjfbsAqOEJaDY6QVoMjpNXgCGk12CqE53m4XC47S1Rhq5DV1VW8vb2hXC6jUCjg+vratlo/crvcbje6u7uhaZptNZwzYqoYZ185ZyJWwev1IhKJNJ2nKSEcx+Ho6AjxeBzj4+MQBEHXPp7nEY1Gsb+/j1wuh729Pfj9/mZaAfDvDdHUNTw8TGoxOztbXV9fX6fWCoUCAUBCoRCzL5lMmu4DAGlqIuFwmOGOj4+/jK8c9oODA1xeXlJrkiRBFEXTvTQlJBQKUd9vbm5wdXWla288Hqe+u91uzM/PN9OOuVH6fD7GHouLi1RMrbWKxWJ1jed5oigKta6qKhEE4WetJUkSw+3u7ureXy6XsbKyQnGdnZ2Ym5sz25K5iZydnVF38/7+nolpNBEARBAEoqoqFfP8/Ew8Hs/PTKS/vx+Dg4MUZ2QaFeTzeSQSCYrr6enB9PS04VymhExNTTGcHiH1fqIsLy/j4+OD4mKxmJm2jI2Q53ny9PRE2SGbzdaNrbWWqqp142RZZh4co6Oj9lpLkiT09vZS3MbGhtE0FDY3NxnOzFQMKU+n09Sde39/J6IoNjURj8dDisUik9fn89kzkWAwiKGhIYqTZRmZTMbYratBqVTCzs4OxbW3t2NyctJQHt2qU6kU4+VwOPxlvN6JACAjIyNM7ouLCyNu0RcYDAYNF6oVUiqVvrYGx5FMJsPUGBgYsNZaCwsLDLe0tNRwj5E3Qk3TsLW1xfB67aWrEsdxkGUZDw8PVe7x8RHb29sN93V0dOhqooJkMslwXq9X9379TwaOI5FIhKRSKRKLxb6NPz091W2typVOp8nr6ytJJBLE7/dbf0a+u1wuFxFFkQQCATIxMcGcD0IIURTl2zyBQID09fWZ6cEaIfUeBrW4vb21pFZdt8AinJyc4OXlpWHM+fm5VeUYWCZE0zTIstwwZm1tzapydWHZeKPRKGOnfD5PDg8PydjYmG22AkDa/n+wBF1dXZiZmYGiKMjlcri7u0M2m7UqfUNYKuQ38ev/NFoFR0irwRHSanCEtBr+jJBPwAg+Wpz1/XYAAAAASUVORK5CYII=" class="logo">
+                                        <span class="name">小可搜</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.xiaozhaolaila.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADg0lEQVRoge2ZX2hTVxzHP8nNnzZNaqrt0mZdW03rgtV2HbSySlfcxCk4RTb2MF/Ut40yfRib4GDgo4OxMfoyxc2nbbAHmXY6GLoNxMIQxwqtwz9M6PxDbW1i0tzmJrk+DK6cGtec3N7sUu737XfO9/x+vw/3nJzLjUvXdZ1lIPf/3cBSyQGxmxwQu8kBsZscELtp2YB4rEx+d26Gm4nbZa9ft7KNsD9YklcKZHY+xcmr5xb1KS6Foa7djN4d5+iVb2RKCBp++SA9DR0leaVA0prKd9cvLOrzuT0Mde2WSV1UIW+gZK+tz0jQV12y19IzEq2pZ/OzPQBMq0n+nL5hzLWGIqypjQr+i3fGyBZyRhzyVgjk9bZ+BqPdAJy8+hNjMzeF+b5InL5IHIBvr50XQN6MDfJGbFDwb/3hfQPEhYuaSoHEVkTpb1oPwMit0f/0/nH/mhCvrm0S4oJeIKVljLjGWyXVS0XOSFrL8Pu9v4xYcbnpXLla8CSzc0IclHgaUCGQ039fIpOfN+J4XQt+xSt4JlNTQizziwUWH3b491L8euKsMLatpQ+AuZzKtJrkTnqGExM/Cp46f0iqjqUg83mNj0aPk9Qeb5uAp4rtrRvJFfLsHDnMXE4turY1FJGqZdnWmlYTvPPLp4w/uCWM742/RsBThcet0N/Y+dT13fUxqXqmnshXE2f5/vqvAEyps8a4Vsiz//xRpjKzgr+nvoO3124x4k1NG/h58vITeV+ob+eV5helejEFksimSWTTReeSC8ZbQxGObNyH2/V4E/Q3dlLrDRD0VVPnD9EcbKB7VTs72l6S7sWSM+J1Kxzp28+hS1+ioxNbEeWLgQNPvMmGfAHO7fxkSWqaAmmoDrPKXwvAZHpKuNAGol28u2EXw2OnSGUzDP32mVTujnAzH/fuLdlvCmTP2i281b4ZgMOjx7nwzxVhfutzvQyPneJe5gFkimV4uoKS94it335lZPmFuFA+d/GSBV0np+fLzltRkHi4hROvflh0LpFNs/30B2XnXjZba9mAmNpaaU1lRn0IQDavLUlD5coUyLHxMxwbP7NUvZhSRQ+7pueMJ7hQiWzKVO6KgtxI3GbHyCFLckuB+BQPvc88v6hPcSllN1SupEAaqsN8PvCeVb2YkqVby6d42dS4vqy1bQu+siwml/M/u83kgNhNDojd5IDYTQ6I3fQIoxLyzPg7NAgAAAAASUVORK5CYII=" class="logo">
+                                        <span class="name">小昭搜</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.sosoyunpan.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACt0lEQVRoge2Y3UtTYRzHP9Pp0maOcmWaZLHMl4uSRFxgSRRlL1AU3vbyD4TdlWCFENFNdBOJF110E0HQbReWJJVBKUWSSaGoYDZlbji3+bYuzmKdzZc9zznS4XC+MM45X36/Pb/Pzu85e55ji7UfiGECZfzvAvSSBWI0WSBGkwViNFkgRpNpQOzSmTsPgS1Tx1LiCv0GX79wmjxIw21w5Emnr6gfL+FVi3CaaVrLNCDyrRUcBXuOjqXENeuTSrNZ+xGDyQIxmsQme1UT5LrXqZRlNN4LY+/TChUDKTsN7kqZkuSVJohpWss0IGKtNfoOpodXj9m4FYpq1N78LAx3CQ0FwNRg2qFiIB8frR1z6mGq1/MAvj0XGkpU+rZW+TkorlV7432pEM5COHoXys/qNrT8WitZzkLwNqu9hSi8aUtcZ2bD/kuw7yLYHVByEMZ6YOaX5uH1uyP1LZCVq/Z6OyAwkrh2lUL1FQUClPjDrboMrw9IVROUeNXe5Hf4/ETtTQ2mesW1UHFecwnaQXbUgfea2psPw+tWiC2mxn9qB/+Q2qu7Cs7tmsrQBuLapUzajKSp1nUL/D+Xz1laUOZNbCnhZeVCw01NpciD5GyBE/ch26n2+x7DUOfquRNf4OtTtVdUA55G6XLknlruKuVO5CW1w9gHpUBXKTg2wQaX8nHkx49/vfzlF5/eZhjphrkZ4ZLEd4ieRjjStnacrPqfwdt7wmnirbXWEkWrKi9AQYVwmjjI5ABEAsJpacuWAfU3AJtQmsQciSn/xp7jK4fMhyEahMg0RAP/nAch7FeO0SBE4udlZ6D6ciJ/swcK9io/2vqBAAMvIDShLC1CvtSiF+fEvq+3A/acBOc2CIxC53UhCDDS66Ddx5T3yd13YCEsnG4cEI0yzQ7RAjGaLBCjyQIxmiwQo+kPQTe0cMGGxwAAAAAASUVORK5CYII=" class="logo">
+                                        <span class="name">SO云盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.sobaidupan.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/sobaidupan.2d1fc94.png" class="logo">
+                                        <span class="name">SO百度</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.lingfengyun.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="https://www.wanwangsou.com//_nuxt/img/lingfengyun.7d6e3db.png" class="logo">
+                                        <span class="name">凌风云</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.quzhuanpan.com?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACY0lEQVRoge1YMUvzQBh+DBkUNNS6hCKlg1PHoh3EqYM4ODo4OLmJf8GhiOCWX1EcHYqCg2MnEQUdBAeRIApSUDrEUoKvw30f5ZJ+Se6afF7DPXA0lz7v9X3gfd676xRAhBzA+O0E0oIWohq0ENWghagGLUQ1mFkuvr0NrK0BnsfG6Slwd5fNb2UqpF4H9veHc9fNTkhuSis3QqRKa2kJsKx4nm3z80oFqNXi41wX6HaF0yISHe02ZYrdXfGcclNauREi5ZGXF+DhIZ5n28D8/HD+9gZ8fsbH9XoyWUl4JOlwnPFrX3tkUpEbIYnNblnA8rLY4uUyP69WgUYjefxgAHQ6ienJzLS6mu0mOAquq80+uUjsEc8D7u/jeZUKMDfHv/v4YJuoKN7fhejpbUr1OlG/z9e55xHVaoF6NoiaTaJqNc1NMaWFSiWi19ewYXd2eF65TNTpsO8eH4ksSyEh09NEV1dhEY7D80yT6OmJ57TbCglptcIiLi9ZCQW5m5th7sGBAkKCB0MioutrokLh3zGHhzzf94k2Nn5RSLMZFnFzQ1QsRscZBtHFBR/X7RItLsrnInUfKRaBoyNgb49/f3sLrK+zo0WpxI41lgXMzg6f/45gO15YAFotdoT5/pbJSlB5o8Fa6igEW68M5P0iGGDb4ycbBd9n57r/4pFRrTZNPD9HN4vUPHJ2BqysxPO+vtgdvdeL/hwMAMcBZmZYnOuK+0RKyMkJYBjsT7SoJH0/+ZqFAnB8DJyfA1tbQL8vnNa4/TudYZqsnZumXPzUH6NMPHJzH9FCVIMWohq0ENWQGyE/rxbtc2E302UAAAAASUVORK5CYII=" class="logo">
+                                        <span class="name">去转盘</span>
+                                    </li>
+                                </a>
+                                <a href="https://www.xiaoso.net?from=chaonengsou" target="window" class="nav-item">
+                                    <li class="inner">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxUlEQVRoge2YMWjyQBTHX9MQS4cO0kKJDtZC6SRSnJw6OGUqIh2ko9hSqINj6eDgVBxD6exQ6CLOxcmhc3ApgjgFB6cQioQY+v+mTz5JTHM2+Rokf8iQy3t575e7y727LQCgDRD32wn4pQgkbIpAwqYIJGyKQMKmjQHhWR0+Pj5oMpkEkcuS0uk0HR0deXcAo25ubkBEgV+NRoMpr40ZWhFI2LTFuh+Zz+f09fXlyVbXdTo7OyNVVRdtu7u7NBgMKJlMuvryPE/b29veE2Od7Cxy+jG0Wq1AYgUG0uv1bBCZTAamaQYSLxAQXdeRSqVsIO/v70GEAxAAiGVZkCTJBlGtVhc2n5+ffof1H6RWqzkucMlkErIsYzqdIpVK4fHx0de4voLIsuy6Wj88POD8/HxxXy6XMZvNfIntG0i32wXHca4g8Xjc1pbL5aCq6o/j+wLSbrfB87wtSUEQbEk72R0eHv74R/BjkFXDqVKpoFgs2grBt7c37O3tOUK/vLz8Dkiz2XSEuLq6gmVZKJVKjhWtoigQRdHmx3EcZFn+fyC6rqNcLjtCXF5ewrIsAFgJAgCqqiKTyfhSwq8FoigKTk5OHBO4uLhYWrndQABA0zQUCgXHd93e3i4+iO8gT09P2NnZWdkThmEs2X8HAgCGYayE+bd3v5PnMn44HFK9XifDMGzP7u/v6fX1lWKxmNfXLRSLxajb7VI+n7c94zjOewXM0iOdTmdprRAEAe12e6W9lx75K03TkM1mlwpMllKGeY48Pz+DiLC/v49+v+9qywICANPpFKenp4jH4xiPx0x5MZ+iXF9fk2maJEkSHR8fs7q76uDggHq9Ho1GI7YTFFrjOIiI6O7ubh03T0okEpRIJJj9NmbPHoGETRsDstZk96p0Ok25XG5xL4piYLGYz7XCqo0ZWhFI2BSBhE0RSNgUgYRNfwAUXFBZ/7CgvQAAAABJRU5ErkJggg==" class="logo">
+                                        <span class="name">小不点</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <iframe id="window" name="window" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.dashengpan.xyz?from=chaonengsou"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.__NUXT__ = {
+                staticAssetsBase: "/_nuxt/static/1703484568",
+                layout: "default",
+                error: null,
+                serverRendered: !0,
+                routePath: "/",
+                config: {
+                    _app: {
+                        basePath: "/",
+                        assetsPath: "/_nuxt/",
+                        cdnURL: null
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
